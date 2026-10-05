@@ -667,3 +667,41 @@ body[data-lang="ja"] .cycle-words span:nth-child(4){
     transform:none!important;
   }
 }
+
+
+/* v1.5.5 bilingual display titles for English UI */
+[data-book-title] .book-title-primary{
+  display:block;
+  color:inherit;
+}
+[data-book-title] .book-title-original{
+  display:block;
+  margin-top:.28em;
+  font-family:var(--sans);
+  font-size:.52em;
+  line-height:1.35;
+  font-weight:500;
+  letter-spacing:.02em;
+  opacity:.58;
+}
+.mini-resource-list [data-book-title] .book-title-original{
+  font-size:.63em;
+  margin-top:.2em;
+}
+.topic-row [data-book-title]{
+  display:inline-flex;
+  flex-direction:column;
+  vertical-align:top;
+}
+.topic-row [data-book-title] .book-title-original{
+  font-size:.72em;
+}
+.city-grid [data-book-title] .book-title-original{
+  font-size:.66em;
+}
+body[data-lang="en"] .resource-card h3{
+  line-height:1.16;
+}
+body[data-lang="en"] .mini-resource-list{
+  align-items:start;
+}

@@ -52,6 +52,89 @@ const I18N={
   }
 };
 
+
+
+// English display translations for titles. These are display labels for the English UI,
+// not a claim that NCCU owns an English-language edition unless one is listed separately.
+const BOOK_TITLE_DISPLAY={
+  en:{
+    '脆弱的一瞬':'A Fragile Moment',
+    '地球之路':'Earth’s Path',
+    '氣候賭局':'The Climate Casino',
+    '暖化尚無定論':'Unsettled',
+    '拯救地球':'Saving the Planet',
+    '熱浪會先殺死你':'The Heat Will Kill You First',
+    '野火':'Wildfire',
+    '在冰川消失之前':'Before the Glaciers Disappear',
+    '尋找北極森林線':'Searching for the Arctic Treeline',
+    '氣候緊急時代來了':'The Age of Climate Emergency',
+    '沙郡年紀':'A Sand County Almanac',
+    '寂靜的春天':'Silent Spring',
+    '與路共生':'Coexisting with Roads',
+    '在大滅絕來臨前':'Before the Great Extinction',
+    '復原重生吧!里山.里地.里海':'Reviving Satoyama, Satouchi, and Satoumi',
+    '狂野人生':'A Wild Life',
+    '成長的極限':'The Limits to Growth',
+    '甜甜圈經濟學':'Doughnut Economics',
+    '從搖籃到搖籃':'Cradle to Cradle',
+    '循環經濟':'Circular Economy',
+    '垃圾之書':'The Book of Waste',
+    '永續時尚':'Sustainable Fashion',
+    '別讓地球碳氣':'A Low-Carbon Life, One Banana at a Time',
+    '能源大騙局':'The Great Energy Scam',
+    '巫師與先知':'The Wizard and the Prophet',
+    '世界又熱、又平、又擠':'Hot, Flat, and Crowded',
+    '世界又熱.又平.又擠':'Hot, Flat, and Crowded',
+    '我們可以選擇的未來':'The Future We Choose',
+    '如何避免氣候災難':'How to Avoid a Climate Disaster',
+    '水的價值':'The Value of Water',
+    '永續發展的路口':'Sustainability at the Crossroads',
+    '永續發展的終局之戰':'The Final Battle for Sustainable Development',
+    '減碳社會學':'The Sociology of Decarbonization',
+    '企業永續典範3.0 ESG如何從觀念到實踐?':'Corporate Sustainability 3.0',
+    '企業永續典範3.0':'Corporate Sustainability 3.0',
+    '為什麼有些街道走起來特別涼？':'Why Do Some Streets Feel Cooler?',
+    '終結空氣汙染':'Ending Air Pollution',
+    '島都之河':'The River of the Island Metropolis'
+  }
+};
+
+function normalizeBookTitleKey(title){
+  return String(title||'')
+    .replace(/^《|》$/g,'')
+    .replace(/\s*[:：]\s*.*/,'')
+    .trim();
+}
+
+function getBookDisplayTitle(title,lang=CURRENT_LANG){
+  const key=normalizeBookTitleKey(title);
+  if(lang==='en')return BOOK_TITLE_DISPLAY.en[key]||key;
+  return key;
+}
+
+function renderBookTitles(lang=CURRENT_LANG){
+  document.querySelectorAll('[data-book-title]').forEach(el=>{
+    const original=el.dataset.bookTitle||'';
+    const display=getBookDisplayTitle(original,lang);
+    el.replaceChildren();
+    if(lang==='en'&&display&&display!==original){
+      const primary=document.createElement('span');
+      primary.className='book-title-primary';
+      primary.textContent=display;
+      const secondary=document.createElement('span');
+      secondary.className='book-title-original';
+      secondary.lang='zh-Hant';
+      secondary.textContent=`《${original}》`;
+      el.append(primary,secondary);
+    }else{
+      el.textContent=`《${original}》`;
+    }
+  });
+}
+
+window.BOOK_TITLE_DISPLAY=BOOK_TITLE_DISPLAY;
+window.getBookDisplayTitle=getBookDisplayTitle;
+
 const CHOICE_FEEDBACK_I18N={
   'zh-Hant':{
     comfort:{
@@ -216,6 +299,7 @@ function applyLanguage(lang,{syncUrl=true}={}){
     btn.classList.toggle('active',active);
     btn.setAttribute('aria-pressed',String(active));
   });
+  renderBookTitles(CURRENT_LANG);
   const meta=document.querySelector('meta[name="description"]');
   if(meta)meta.setAttribute('content',t('meta.description'));
   document.body.dataset.lang=CURRENT_LANG;
