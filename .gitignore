@@ -1,0 +1,15 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+~$*
+
+# High-resolution source photos are archived outside the deployed site
+*.tif
+*.tiff
+assets/dahhsian/source/
+
+# Local working files
+*.xlsx
+*.xls
