@@ -54,48 +54,64 @@ const I18N={
 
 
 
-// English display translations for titles. These are display labels for the English UI,
-// not a claim that NCCU owns an English-language edition unless one is listed separately.
+// Multilingual book-title display metadata.
+// type: "official" = verified original/official alternate title;
+//       "exhibition" = translation prepared for this exhibition UI only.
 const BOOK_TITLE_DISPLAY={
   en:{
-    '脆弱的一瞬':'A Fragile Moment',
-    '地球之路':'Earth’s Path',
-    '氣候賭局':'The Climate Casino',
-    '暖化尚無定論':'Unsettled',
-    '拯救地球':'Saving the Planet',
-    '熱浪會先殺死你':'The Heat Will Kill You First',
-    '野火':'Wildfire',
-    '在冰川消失之前':'Before the Glaciers Disappear',
-    '尋找北極森林線':'Searching for the Arctic Treeline',
-    '氣候緊急時代來了':'The Age of Climate Emergency',
-    '沙郡年紀':'A Sand County Almanac',
-    '寂靜的春天':'Silent Spring',
-    '與路共生':'Coexisting with Roads',
-    '在大滅絕來臨前':'Before the Great Extinction',
-    '復原重生吧!里山.里地.里海':'Reviving Satoyama, Satouchi, and Satoumi',
-    '狂野人生':'A Wild Life',
-    '成長的極限':'The Limits to Growth',
-    '甜甜圈經濟學':'Doughnut Economics',
-    '從搖籃到搖籃':'Cradle to Cradle',
-    '循環經濟':'Circular Economy',
-    '垃圾之書':'The Book of Waste',
-    '永續時尚':'Sustainable Fashion',
-    '別讓地球碳氣':'A Low-Carbon Life, One Banana at a Time',
-    '能源大騙局':'The Great Energy Scam',
-    '巫師與先知':'The Wizard and the Prophet',
-    '世界又熱、又平、又擠':'Hot, Flat, and Crowded',
-    '世界又熱.又平.又擠':'Hot, Flat, and Crowded',
-    '我們可以選擇的未來':'The Future We Choose',
-    '如何避免氣候災難':'How to Avoid a Climate Disaster',
-    '水的價值':'The Value of Water',
-    '永續發展的路口':'Sustainability at the Crossroads',
-    '永續發展的終局之戰':'The Final Battle for Sustainable Development',
-    '減碳社會學':'The Sociology of Decarbonization',
-    '企業永續典範3.0 ESG如何從觀念到實踐?':'Corporate Sustainability 3.0',
-    '企業永續典範3.0':'Corporate Sustainability 3.0',
-    '為什麼有些街道走起來特別涼？':'Why Do Some Streets Feel Cooler?',
-    '終結空氣汙染':'Ending Air Pollution',
-    '島都之河':'The River of the Island Metropolis'
+    '脆弱的一瞬':{title:"Our Fragile Moment: How Lessons from Earth's Past Can Help Us Survive the Climate Crisis",type:'official'},
+    '地球之路':{title:'The Earth Transformed: An Untold History',type:'official'},
+    '氣候賭局':{title:'The Climate Casino: Risk, Uncertainty, and Economics for a Warming World',type:'official'},
+    '暖化尚無定論':{title:"Unsettled: What Climate Science Tells Us, What It Doesn't, and Why It Matters",type:'official'},
+    '拯救地球':{title:'How to Save Our Planet: The Facts',type:'official'},
+    '熱浪會先殺死你':{title:'The Heat Will Kill You First: Life and Death on a Scorched Planet',type:'official'},
+    '野火':{title:'Fire Weather: A True Story from a Hotter World',type:'official'},
+    '在冰川消失之前':{title:'On Time and Water',type:'official'},
+    '尋找北極森林線':{title:'The Treeline: The Last Forest and the Future of Life on Earth',type:'official'},
+    '氣候緊急時代來了':{title:'The Uninhabitable Earth: Life After Warming',type:'official'},
+    '沙郡年紀':{title:'A Sand County Almanac and Other Writings',type:'official'},
+    '寂靜的春天':{title:'Silent Spring',type:'official'},
+    '與路共生':{title:'Crossings: How Road Ecology Is Shaping the Future of Our Planet',type:'official'},
+    '在大滅絕來臨前':{title:'Under a White Sky: The Nature of the Future',type:'official'},
+    '復原重生吧!里山.里地.里海':{title:'Reviving Satoyama, Satouchi, and Satoumi: Changes and Conservation Activities',type:'exhibition'},
+    '狂野人生':{title:"A Wild Idea: The True Story of Douglas Tompkins—The Greatest Conservationist (You've Never Heard Of)",type:'official'},
+    '成長的極限':{title:'Limits to Growth: The 30-Year Update',type:'official'},
+    '甜甜圈經濟學':{title:'Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist',type:'official'},
+    '從搖籃到搖籃':{title:'Cradle to Cradle: Remaking the Way We Make Things',type:'official'},
+    '循環經濟':{title:'Circular Economy',type:'exhibition'},
+    '垃圾之書':{title:'The Book of Trash',type:'exhibition'},
+    '永續時尚':{title:'The Fashion Conscious',type:'official'},
+    '永續時尚,穿出你的風格與價值!':{title:'The Fashion Conscious',type:'official'},
+    '別讓地球碳氣':{title:'How Bad Are Bananas? The Carbon Footprint of Everything',type:'official'},
+    '能源大騙局':{title:'Fueling Freedom: Exposing the Mad War on Energy',type:'official'},
+    '巫師與先知':{title:"The Wizard and the Prophet: Two Remarkable Scientists and Their Dueling Visions to Shape Tomorrow's World",type:'official'},
+    '世界又熱、又平、又擠':{title:'Hot, Flat, and Crowded: Why the World Needs a Green Revolution—and How We Can Renew Our Global Future',type:'official'},
+    '世界又熱.又平.又擠':{title:'Hot, Flat, and Crowded: Why the World Needs a Green Revolution—and How We Can Renew Our Global Future',type:'official'},
+    '我們可以選擇的未來':{title:'The Future We Choose: The Stubborn Optimist’s Guide to the Climate Crisis',type:'official'},
+    '如何避免氣候災難':{title:'How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need',type:'official'},
+    '水的價值':{title:'The Worth of Water: Our Story of Chasing Solutions to the World’s Greatest Challenge',type:'official'},
+    '永續發展的路口':{title:'At a Crossroads of Sustainable Development: The Ultimate Guide to the Practice of SDGs',type:'official'},
+    '永續發展的終局之戰':{title:'The Endgame of Sustainable Development: Theory and Practice of Climate Change Issues',type:'exhibition'},
+    '減碳社會學':{title:"Sociology of Decarbonization: Public Opinion and Challenges in Taiwan's Net-Zero Transition",type:'exhibition'},
+    '企業永續典範3.0 ESG如何從觀念到實踐?':{title:'Corporate Sustainability Model 3.0: From ESG Concepts to Practice',type:'exhibition'},
+    '企業永續典範3.0':{title:'Corporate Sustainability Model 3.0: From ESG Concepts to Practice',type:'exhibition'},
+    '為什麼有些街道走起來特別涼？':{title:'Why Do Some Streets Feel Cooler? Exploring Taiwan for Urban Cooling Solutions',type:'exhibition'},
+    '為什麼有些街道走起來特別涼?':{title:'Why Do Some Streets Feel Cooler? Exploring Taiwan for Urban Cooling Solutions',type:'exhibition'},
+    '終結空氣汙染':{title:'Clearing the Air: The Beginning and the End of Air Pollution',type:'official'},
+    '島都之河':{title:"A City's River: Water History and Water Culture of the Tamsui River and Taipei City",type:'official'}
+  },
+  ja:{
+    '復原重生吧!里山.里地.里海':{title:'よみがえれ里山・里地・里海：里山・里地の変化と保全活動',type:'official'},
+    '循環經濟':{title:'サーキュラーエコノミー',type:'exhibition'},
+    '垃圾之書':{title:'ごみの本',type:'exhibition'},
+    '永續發展的路口':{title:'持続可能な開発の岐路：SDGs実践のためのガイド',type:'exhibition'},
+    '永續發展的終局之戰':{title:'持続可能な開発の最終局面：気候変動問題の理論と実務',type:'exhibition'},
+    '減碳社會學':{title:'脱炭素社会学：台湾のネットゼロ転換をめぐる世論と課題',type:'exhibition'},
+    '企業永續典範3.0 ESG如何從觀念到實踐?':{title:'企業サステナビリティ・モデル3.0：ESGを理念から実践へ',type:'exhibition'},
+    '企業永續典範3.0':{title:'企業サステナビリティ・モデル3.0：ESGを理念から実践へ',type:'exhibition'},
+    '為什麼有些街道走起來特別涼？':{title:'なぜ涼しく感じる通りがあるのか？：台湾を歩いて探る都市冷却の可能性',type:'exhibition'},
+    '為什麼有些街道走起來特別涼?':{title:'なぜ涼しく感じる通りがあるのか？：台湾を歩いて探る都市冷却の可能性',type:'exhibition'},
+    '島都之河':{title:'都市の川：淡水河と台北、百年の水の歴史と共生',type:'exhibition'}
   }
 };
 
@@ -106,26 +122,51 @@ function normalizeBookTitleKey(title){
     .trim();
 }
 
-function getBookDisplayTitle(title,lang=CURRENT_LANG){
+function getBookDisplayInfo(title,lang=CURRENT_LANG){
   const key=normalizeBookTitleKey(title);
-  if(lang==='en')return BOOK_TITLE_DISPLAY.en[key]||key;
-  return key;
+  if(lang==='zh-Hant')return {title:key,type:'original',original:key};
+  const direct=BOOK_TITLE_DISPLAY[lang]?.[key];
+  if(direct)return {...direct,original:key};
+  if(lang==='ja'){
+    const en=BOOK_TITLE_DISPLAY.en[key];
+    if(en?.type==='official')return {title:en.title,type:'official-original',original:key};
+  }
+  const fallback=BOOK_TITLE_DISPLAY.en[key];
+  if(lang==='en'&&fallback)return {...fallback,original:key};
+  return {title:key,type:'original',original:key};
+}
+
+function getBookDisplayTitle(title,lang=CURRENT_LANG){
+  return getBookDisplayInfo(title,lang).title;
+}
+
+function bookTranslationLabel(type,lang=CURRENT_LANG){
+  if(type!=='exhibition')return '';
+  return lang==='ja'?'展示用訳':lang==='en'?'Exhibition translation':'';
 }
 
 function renderBookTitles(lang=CURRENT_LANG){
   document.querySelectorAll('[data-book-title]').forEach(el=>{
     const original=el.dataset.bookTitle||'';
-    const display=getBookDisplayTitle(original,lang);
+    const info=getBookDisplayInfo(original,lang);
     el.replaceChildren();
-    if(lang==='en'&&display&&display!==original){
+    if(lang!=='zh-Hant'&&info.title&&info.title!==original){
       const primary=document.createElement('span');
       primary.className='book-title-primary';
-      primary.textContent=display;
+      primary.textContent=info.title;
+      el.append(primary);
+      const label=bookTranslationLabel(info.type,lang);
+      if(label){
+        const note=document.createElement('span');
+        note.className='book-title-note';
+        note.textContent=label;
+        el.append(note);
+      }
       const secondary=document.createElement('span');
       secondary.className='book-title-original';
       secondary.lang='zh-Hant';
       secondary.textContent=`《${original}》`;
-      el.append(primary,secondary);
+      el.append(secondary);
     }else{
       el.textContent=`《${original}》`;
     }
@@ -133,7 +174,9 @@ function renderBookTitles(lang=CURRENT_LANG){
 }
 
 window.BOOK_TITLE_DISPLAY=BOOK_TITLE_DISPLAY;
+window.getBookDisplayInfo=getBookDisplayInfo;
 window.getBookDisplayTitle=getBookDisplayTitle;
+window.bookTranslationLabel=bookTranslationLabel;
 
 const CHOICE_FEEDBACK_I18N={
   'zh-Hant':{

@@ -669,7 +669,7 @@ body[data-lang="ja"] .cycle-words span:nth-child(4){
 }
 
 
-/* v1.5.5 bilingual display titles for English UI */
+/* v1.5.6 multilingual display titles */
 [data-book-title] .book-title-primary{
   display:block;
   color:inherit;
@@ -704,4 +704,18 @@ body[data-lang="en"] .resource-card h3{
 }
 body[data-lang="en"] .mini-resource-list{
   align-items:start;
+}
+
+/* v1.5.6 multilingual bibliographic title labels */
+[data-book-title] .book-title-note{
+  display:block;margin-top:.38em;font-family:var(--sans);font-size:.62em;line-height:1.25;
+  font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(211,223,226,.62)
+}
+.topic-row [data-book-title] .book-title-note,.city-grid [data-book-title] .book-title-note{font-size:10px}
+body.header-dark [data-book-title] .book-title-note{color:rgba(16,37,58,.52)}
+
+body[data-lang="ja"] .resource-card h3{line-height:1.18}
+body[data-lang="ja"] .mini-resource-list{align-items:start}
+@media(max-width:900px){
+  body[data-lang="en"] .resource-card h3,body[data-lang="ja"] .resource-card h3{font-size:clamp(22px,6vw,32px)}
 }
