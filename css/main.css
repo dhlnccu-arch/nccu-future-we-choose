@@ -839,3 +839,36 @@ body.menu-open{overflow:hidden}
 .book-title-note-inline{display:block;margin-top:6px;font:800 9px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#d1a476}
 .dahhsian .book-title-original-inline,.about-exhibition .book-title-original-inline{color:#657a81}
 .work-cover-fallback .book-title-original-inline{color:rgba(241,240,233,.7)}
+
+/* v1.6.1 — hero quick visit info + corrected lawn card composition */
+.hero-visit{
+  display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;
+  margin-top:34px;padding-top:18px;border-top:1px solid rgba(241,240,233,.28);
+  max-width:860px;color:rgba(241,240,233,.8);
+  font-size:12px;line-height:1.45;letter-spacing:.11em;text-transform:none
+}
+.hero-visit span{white-space:nowrap}
+.hero-visit span:first-child{color:#f1f0e9;font-weight:600;letter-spacing:.14em}
+
+/* Keep the first three-image mosaic, but give the lawn scene enough height
+   to show sky, building, and grass instead of cropping it into a facade photo. */
+@media (min-width:901px){
+  .dahhsian-gallery{grid-template-rows:repeat(2,minmax(170px,18vw)) auto;grid-auto-rows:auto}
+  .dahhsian-card-lawn{
+    grid-column:1 / -1;
+    grid-row:3;
+    aspect-ratio:16 / 9;
+    min-height:0;
+  }
+  .dahhsian-card-lawn img{
+    object-position:center 52%;
+  }
+  .dahhsian-card-lawn strong{max-width:66%}
+}
+
+@media (max-width:900px){
+  .hero-visit{display:grid;gap:5px;margin-top:24px;padding-top:14px;font-size:10px;letter-spacing:.08em;max-width:100%}
+  .hero-visit span{white-space:normal}
+  .dahhsian-card-lawn{aspect-ratio:3 / 2;min-height:0}
+  .dahhsian-card-lawn img{object-position:center center}
+}
