@@ -668,54 +668,174 @@ body[data-lang="ja"] .cycle-words span:nth-child(4){
   }
 }
 
-
-/* v1.5.6 multilingual display titles */
-[data-book-title] .book-title-primary{
-  display:block;
-  color:inherit;
+/* ===== v1.6.0: NCCU-wide sustainability narrative ===== */
+.opening-thesis{
+  width:min(980px,84vw);
+  margin:0 auto 13vh;
+  padding:8vh 0 6vh;
+  border-bottom:1px solid rgba(255,255,255,.18);
 }
-[data-book-title] .book-title-original{
-  display:block;
-  margin-top:.28em;
-  font-family:var(--sans);
-  font-size:.52em;
+.opening-thesis>p:last-child{
+  margin:16px 0 0;
+  font-family:var(--serif);
+  font-size:clamp(30px,4.1vw,62px);
   line-height:1.35;
+  color:#eef3ef;
+  max-width:16em;
+}
+
+/* Featured work: make the book exhibition identity visible inside every chapter. */
+.work-spotlight{
+  margin:10vh 0 2vh;
+  display:grid;
+  grid-template-columns:minmax(180px,280px) minmax(0,1fr);
+  gap:clamp(28px,5vw,78px);
+  align-items:center;
+  padding:clamp(24px,3.5vw,48px) 0;
+  border-top:1px solid rgba(255,255,255,.2);
+  border-bottom:1px solid rgba(255,255,255,.14);
+}
+.work-spotlight-cover{
+  position:relative;
+  aspect-ratio:3/4;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.18);
+  background:linear-gradient(145deg,#123e5b,#0a2f4f);
+  box-shadow:0 24px 60px rgba(0,0,0,.18);
+}
+.work-spotlight-cover img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#f2f0e9;
+  opacity:0;transition:opacity .25s ease;
+}
+.work-spotlight-cover.loaded img{opacity:1}
+.work-cover-fallback{
+  position:absolute;inset:0;display:grid;place-items:center;padding:28px;text-align:center;
+  font-family:var(--serif);font-size:clamp(22px,2.2vw,34px);line-height:1.5;color:#f1f0e9;
+}
+.work-spotlight-cover.loaded .work-cover-fallback{opacity:0}
+.work-spotlight-copy h3{
+  margin:8px 0 14px;
+  font-family:var(--serif);
+  font-size:clamp(30px,3.6vw,54px);
   font-weight:500;
-  letter-spacing:.02em;
-  opacity:.58;
+  line-height:1.25;
 }
-.mini-resource-list [data-book-title] .book-title-original{
-  font-size:.63em;
-  margin-top:.2em;
+.work-spotlight-copy>p:not(.editorial-label){
+  max-width:720px;margin:0;color:#c3d1d4;font-family:var(--serif);
+  font-size:clamp(17px,1.4vw,22px);line-height:1.75;
 }
-.topic-row [data-book-title]{
-  display:inline-flex;
-  flex-direction:column;
-  vertical-align:top;
+.work-spotlight-copy a{
+  display:inline-block;margin-top:28px;text-decoration:none;border-bottom:1px solid currentColor;
+  padding-bottom:5px;font-size:13px;letter-spacing:.08em;font-weight:800;
 }
-.topic-row [data-book-title] .book-title-original{
-  font-size:.72em;
-}
-.city-grid [data-book-title] .book-title-original{
-  font-size:.66em;
-}
-body[data-lang="en"] .resource-card h3{
-  line-height:1.16;
-}
-body[data-lang="en"] .mini-resource-list{
-  align-items:start;
-}
+.dahhsian .work-spotlight,.about-exhibition .work-spotlight{border-color:rgba(16,37,58,.18)}
 
-/* v1.5.6 multilingual bibliographic title labels */
-[data-book-title] .book-title-note{
-  display:block;margin-top:.38em;font-family:var(--sans);font-size:.62em;line-height:1.25;
-  font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(211,223,226,.62)
+/* NCCU special chapter */
+.nccu-campus{padding-top:13vh;padding-bottom:14vh}
+.nccu-campus .chapter-inner{width:min(1500px,90vw)}
+.nccu-story{
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);
+  margin:7vh 0 9vh;padding-top:28px;border-top:1px solid rgba(16,37,58,.22)
 }
-.topic-row [data-book-title] .book-title-note,.city-grid [data-book-title] .book-title-note{font-size:10px}
-body.header-dark [data-book-title] .book-title-note{color:rgba(16,37,58,.52)}
+.nccu-story p{margin:0;font-family:var(--serif);font-size:clamp(18px,1.65vw,25px);line-height:1.8;color:#345360}
+.nccu-quiz-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:6vh}
+.nccu-quiz-card{
+  min-height:520px;padding:28px;display:flex;flex-direction:column;
+  background:#0c3552;color:#f1f2eb;border:1px solid rgba(9,45,70,.12);position:relative;overflow:hidden
+}
+.nccu-quiz-card::after{
+  content:"";position:absolute;right:-80px;bottom:-80px;width:220px;height:220px;border:1px solid rgba(169,201,207,.14);border-radius:50%;pointer-events:none
+}
+.nccu-quiz-index{font-size:10px;letter-spacing:.18em;color:#9cc9d1}
+.nccu-quiz-card h3{font-family:var(--serif);font-size:clamp(24px,2.2vw,34px);font-weight:500;line-height:1.5;margin:6vh 0 28px}
+.nccu-quiz-options{display:grid;gap:9px;margin-top:auto}
+.nccu-quiz-options button,.nccu-future-options button{
+  width:100%;text-align:left;border:1px solid rgba(255,255,255,.25);background:transparent;color:inherit;
+  padding:13px 15px;min-height:48px;cursor:pointer;font-weight:700;transition:background .2s ease,border-color .2s ease,transform .2s ease
+}
+.nccu-quiz-options button.is-selected,.nccu-future-options button.is-selected{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.7)}
+.nccu-quiz-options button.is-correct{box-shadow:inset 3px 0 0 #a9c9cf}
+.nccu-quiz-reveal{
+  margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);animation:nccuReveal .35s ease both
+}
+.nccu-quiz-reveal strong{font-family:var(--serif);font-size:clamp(52px,5.2vw,78px);font-weight:500;line-height:1;color:#f3d4aa}
+.nccu-quiz-reveal>span{margin-left:8px;color:#b8d1d4;font-weight:700}
+.nccu-quiz-reveal p{font-family:var(--serif);font-size:16px;line-height:1.7;color:#d6e1e1;margin:14px 0 0}
+@keyframes nccuReveal{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 
-body[data-lang="ja"] .resource-card h3{line-height:1.18}
-body[data-lang="ja"] .mini-resource-list{align-items:start}
+.nccu-future-prompt{
+  margin-top:9vh;padding:clamp(30px,5vw,66px);background:#173f4d;color:#f2f3eb
+}
+.nccu-future-prompt h3{font-family:var(--serif);font-size:clamp(30px,3.4vw,52px);font-weight:500;line-height:1.4;max-width:18em;margin:12px 0 34px}
+.nccu-future-options{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.nccu-future-reveal{margin-top:36px;padding-top:30px;border-top:1px solid rgba(255,255,255,.2);animation:nccuReveal .35s ease both}
+.nccu-future-reveal>span{display:block;font-size:11px;letter-spacing:.16em;color:#b5d0d1;margin-bottom:7px}
+.nccu-future-reveal strong{font-family:var(--serif);font-size:clamp(70px,10vw,150px);font-weight:500;line-height:.9;color:#f0c48f}
+.nccu-future-reveal p{max-width:900px;font-family:var(--serif);font-size:clamp(17px,1.55vw,23px);line-height:1.72;color:#dce5e2}
+
+.nccu-snapshot{margin-top:10vh;padding:clamp(32px,5vw,70px);background:#092f4d;color:#edf2ef}
+.nccu-snapshot>h3{font-family:var(--serif);font-size:clamp(26px,3vw,44px);font-weight:500;max-width:16em;line-height:1.5;margin:10px 0 5vh}
+.nccu-snapshot-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.16);border-left:1px solid rgba(255,255,255,.16)}
+.nccu-snapshot-grid article{min-height:190px;padding:26px;border-right:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16);display:flex;flex-direction:column;justify-content:space-between}
+.nccu-snapshot-grid strong{font-family:var(--serif);font-size:clamp(44px,4.7vw,76px);font-weight:500;color:#f0c48f;line-height:1}
+.nccu-snapshot-grid span{font-size:13px;line-height:1.55;color:#c8d8d8;max-width:16em}
+.source-note{font-size:12px;color:#9db6bb;margin:22px 0 0}
+.dahhsian-local-heading{margin-top:12vh;padding-top:8vh;border-top:1px solid rgba(16,37,58,.2)}
+.dahhsian-local-heading h3{font-family:var(--serif);font-size:clamp(28px,3.2vw,48px);font-weight:500;line-height:1.45;margin:12px 0 12px;max-width:17em}
+.dahhsian-local-heading>p:last-child{max-width:850px;font-family:var(--serif);font-size:clamp(17px,1.4vw,22px);line-height:1.75;color:#49646c}
+.dahhsian-card strong{bottom:58px}
+.dahhsian-explore{position:absolute;z-index:2;left:28px;bottom:24px;font-size:10px;letter-spacing:.14em;color:rgba(255,255,255,.78);transition:opacity .2s ease,transform .2s ease}
+@media(hover:hover){.dahhsian-card:hover .dahhsian-explore{opacity:1;transform:translateX(4px)}}
+
+/* About / curatorial notes */
+.about-exhibition{padding:12vh 0 14vh;background:#ebece5;color:var(--ink)}
+.about-exhibition h2{font-family:var(--serif);font-size:clamp(46px,6vw,86px);font-weight:500;margin:8px 0 7vh}
+.about-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(16,37,58,.18);border-left:1px solid rgba(16,37,58,.18)}
+.about-grid article{min-height:160px;padding:24px;border-right:1px solid rgba(16,37,58,.18);border-bottom:1px solid rgba(16,37,58,.18)}
+.about-grid span{display:block;font-size:11px;letter-spacing:.14em;color:#60747b;margin-bottom:24px}
+.about-grid strong{display:block;font-family:var(--serif);font-size:clamp(20px,2vw,30px);font-weight:500;line-height:1.4}
+.curatorial-method{margin-top:9vh;display:grid;grid-template-columns:1.2fr .8fr;gap:8vw;padding-top:5vh;border-top:1px solid rgba(16,37,58,.18)}
+.curatorial-method h3{font-family:var(--serif);font-size:clamp(28px,3vw,45px);font-weight:500;margin:10px 0 18px}
+.curatorial-method p:not(.editorial-label){font-family:var(--serif);font-size:18px;line-height:1.8;color:#49616b;max-width:760px}
+.method-path{list-style:none;padding:0;margin:0;counter-reset:path}
+.method-path li{counter-increment:path;border-top:1px solid rgba(16,37,58,.18);padding:16px 0;font-family:var(--serif);font-size:20px}
+.method-path li::before{content:"0" counter(path);display:inline-block;width:54px;font:700 10px/1 var(--sans);letter-spacing:.12em;color:#6f878e}
+.sources{margin-top:8vh;border-top:1px solid rgba(16,37,58,.18);padding-top:22px}
+.sources summary{cursor:pointer;font-weight:800;letter-spacing:.04em}
+.sources ul{margin:22px 0 0;padding-left:20px;max-width:950px;color:#526971;line-height:1.8}
+
+/* Mobile: keep the editorial story vertical but let short recommendation rows swipe. */
 @media(max-width:900px){
-  body[data-lang="en"] .resource-card h3,body[data-lang="ja"] .resource-card h3{font-size:clamp(22px,6vw,32px)}
+  .opening-thesis{width:auto;margin-left:24px;margin-right:24px;margin-bottom:9vh}
+  .work-spotlight{grid-template-columns:120px minmax(0,1fr);gap:20px;margin-top:8vh}
+  .work-spotlight-copy h3{font-size:26px}
+  .work-spotlight-copy>p:not(.editorial-label){font-size:15px}
+  .mini-resource-list{display:flex!important;overflow-x:auto;gap:10px;padding-bottom:12px;scroll-snap-type:x mandatory;overscroll-behavior-inline:contain}
+  .mini-resource-list>span{flex:0 0 78%;scroll-snap-align:start;padding:16px;border:1px solid rgba(255,255,255,.14)}
+  .nccu-campus .chapter-inner{width:auto}
+  .nccu-story{grid-template-columns:1fr;gap:20px;margin-top:5vh}
+  .nccu-quiz-grid{grid-template-columns:1fr}
+  .nccu-quiz-card{min-height:0}
+  .nccu-future-options{grid-template-columns:1fr}
+  .nccu-snapshot-grid{grid-template-columns:1fr 1fr}
+  .nccu-snapshot-grid article{min-height:150px}
+  .about-grid{grid-template-columns:1fr 1fr}
+  .curatorial-method{grid-template-columns:1fr;gap:5vh}
+  .dahhsian-explore{opacity:1}
 }
+@media(max-width:560px){
+  .work-spotlight{grid-template-columns:1fr;gap:20px}
+  .work-spotlight-cover{width:42vw;max-width:180px}
+  .nccu-snapshot-grid{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  .nccu-quiz-reveal,.nccu-future-reveal{animation:none}
+}
+
+body.menu-open{overflow:hidden}
+.book-title-display{display:block}
+.book-title-original-inline{display:block;margin-top:5px;font:600 12px/1.5 var(--sans);color:rgba(190,207,211,.72)}
+.book-title-note-inline{display:block;margin-top:6px;font:800 9px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#d1a476}
+.dahhsian .book-title-original-inline,.about-exhibition .book-title-original-inline{color:#657a81}
+.work-cover-fallback .book-title-original-inline{color:rgba(241,240,233,.7)}

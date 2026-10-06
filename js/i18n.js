@@ -52,131 +52,47 @@ const I18N={
   }
 };
 
+/* v1.6.0 — NCCU-wide sustainability chapter, exhibition information, and featured works */
+Object.assign(I18N['zh-Hant'],{
+  'menu.dahhsian':'從達賢窗外，看見永續政大','menu.about':'展覽資訊','meta.description':'國立政治大學達賢圖書館永續書影展，從地球氣候、生態、消費到政大校園，重新思考我們如何共同選擇未來。',
+  'opening.thesis':'未來不是等待到來的結果，而是由我們今天的選擇逐步形成。',
+  'spotlight.cta':'探索本章書單 →','spotlight.earth.copy':'從四十五億年的地球史回望今天：真正令人不安的，不只是氣候變化，而是變化發生得如此快速。','spotlight.climate.copy':'氣候危機不是抽象的全球平均溫度，而是人體如何承受更長、更頻繁，也更致命的高溫。','spotlight.residents.copy':'當人類改變環境時，其他生命承受的代價往往最先被忽略。永續因此也是一個關於共存的問題。','spotlight.consume.copy':'當人口、資源與生產都持續增加，真正需要重新思考的，也許不是如何讓成長更快，而是成長應該走到哪裡。','spotlight.future.copy':'未來不是單一技術帶來的結果，而是政策、城市、企業與日常行動共同累積出的方向。',
+  'nccu.title':'從達賢窗外，<br><em>看見永續政大。</em>','nccu.intro':'你以為自己只是在校園裡。其實，你正站在一座生態系統之中。永續不是發生在遠方，它也正在政大的森林、溪流、建築與日常選擇裡發生。','nccu.story1':'從教室走向圖書館的幾分鐘裡，有鳥掠過樹梢，有蝶類穿過草地，也有一些你可能從未見過的生命，正與我們共享這片土地。','nccu.story2':'先別急著看數字。猜一猜，這座校園究竟容納了多少生命、多少碳，也正在產生多少再生能源。',
+  'nccu.quiz.bio.q':'猜猜看：政大校園裡，有多少種生命曾被記錄？','nccu.quiz.bio.a':'50 種以下','nccu.quiz.bio.b':'約 100 種','nccu.quiz.bio.c':'超過 150 種','nccu.quiz.bio.reveal':'依「三貓生態大踏查」等資料，政大範圍可見的植物、哺乳類、鳥類、兩棲類、爬蟲類與蝶類合計 153 種；其中也包括穿山甲、食蛇龜與臺灣藍鵲等物種。',
+  'nccu.quiz.carbon.q':'你看到的是山林。它大約儲存了多少碳？','nccu.quiz.carbon.a':'約 1,000 公噸','nccu.quiz.carbon.b':'約 10,000 公噸','nccu.quiz.carbon.c':'超過 100,000 公噸','nccu.quiz.carbon.reveal':'校內約 60 公頃林地與山坡地，估計總碳儲存量約 106,982 公噸，每年還可固碳約 1,258 公噸。當你坐在樹蔭下，它也正在為未來工作。',
+  'nccu.quiz.solar.q':'2025 年，政大全校太陽光電一年發了多少電？','nccu.quiz.solar.a':'約 6.7 萬度','nccu.quiz.solar.b':'約 67 萬度','nccu.quiz.solar.c':'約 670 萬度','nccu.quiz.solar.reveal':'2025 年政大全校太陽光電實際發電量為 673,371.10 度，其中達賢圖書館約 61,579 度。建築不只消耗能源，也能成為能源轉型的一部分。','nccu.unit.tons':'公噸','nccu.unit.kwh':'度',
+  'nccu.future.q':'如果未來由今天的選擇組成，你希望十年後的政大改變最多的是什麼？','nccu.future.a':'更多自然棲地','nccu.future.b':'更低碳的建築與能源','nccu.future.c':'更循環的校園生活','nccu.future.d':'我希望這些改變一起發生','nccu.future.label':'政大的長程目標','nccu.future.reveal':'《2025 政大永續報告書》將「達成校園碳中和」列為 2048 長程目標。但永續政大不只是一個碳數字，也包括能源、資源循環、生態、校園韌性與生活方式。',
+  'nccu.snapshot.title':'當數字最後一起出現，它們描繪的是同一座校園。','nccu.snapshot.campus':'公頃校地','nccu.snapshot.conservation':'公頃保育共生地（47.34%）','nccu.snapshot.species':'種政大範圍可見生物紀錄','nccu.snapshot.solar':'度太陽光電（2025）','nccu.snapshot.carbon':'公噸估計碳儲存量','nccu.snapshot.goal':'校園碳中和長程目標','nccu.source':'資料來源：國立政治大學《2025 永續報告書》。','nccu.dahhsianTitle':'從整個政大的永續進程，回到眼前這座圖書館。','nccu.dahhsianBody':'達賢不是永續政大的全部，而是一個可以被看見、被觸摸的案例：湖水、玻璃、能源、雨水與其他生命，都在這裡交會。',
+  'dahhsian.explore':'點擊探索 →',
+  'choice.q3.body':'外帶餐飲、活動物資與一次性包裝帶來便利，也成為校園資源循環的一部分。','choice.q4.body':'政大持續推動能源管理、再生能源與數位監控；當設備變得更有效率，生活方式是否也需要改變？','choice.q5.body':'政大的長程目標是 2048 校園碳中和。要走到那裡，現在應該承擔多少成本，又如何讓轉型更公平？','choice.nextDahhsian':'看看政大如何面對相同取捨 →',
+  'about.title':'展覽資訊','about.whenLabel':'展期','about.when':'2026 年 11–12 月','about.booksLabel':'書展地點','about.books':'2F 展示書區','about.filmsLabel':'影展地點','about.films':'4F 影展區','about.organizerLabel':'主辦單位','about.organizer':'國立政治大學圖書館','about.methodTitle':'我們如何組成這條閱讀路徑？','about.methodBody':'本展從氣候科學、生態倫理、消費與經濟、城市治理與永續行動等面向選書，並將圖書、影片與政大校園重新組成一條「理解問題 → 看見衝擊 → 重新定位人類 → 質疑既有模式 → 尋找改變路徑」的閱讀路徑。','about.path1':'理解問題','about.path2':'看見衝擊','about.path3':'重新定位人類','about.path4':'質疑既有模式','about.path5':'尋找改變路徑','about.sourcesTitle':'資料來源與策展依據 ＋','about.source1':'國立政治大學《2025 永續報告書》：校園能源、生態、水資源、碳匯與長程永續目標。','about.source2':'國立政治大學圖書館館藏與本展選書、影片資料。','about.source3':'各展品之出版資料與原始作品資訊；英文、日文頁面之題名以正式原題優先。',
+  'aria.nccuQuiz':'政大永續互動'
+});
 
+Object.assign(I18N.en,{
+  'menu.dahhsian':'From Dah Hsian to a Sustainable NCCU','menu.about':'About the Exhibition','meta.description':'A sustainability book and film exhibition at Dah Hsian Library, connecting climate, ecology, consumption, and the NCCU campus to the futures we choose together.',
+  'opening.thesis':'The future is not something we simply wait for. It is shaped, step by step, by the choices we make today.',
+  'spotlight.cta':'Explore this chapter’s books →','spotlight.earth.copy':'Looking back across 4.5 billion years of Earth history, the unsettling question is not only that climate changes, but how quickly change is now unfolding.','spotlight.climate.copy':'The climate crisis is not an abstract global average. It is about how human bodies endure longer, more frequent, and more dangerous heat.','spotlight.residents.copy':'When people reshape environments, the costs borne by other forms of life are often the first to disappear from view. Sustainability is also a question of coexistence.','spotlight.consume.copy':'When population, production, and resource use keep expanding, the question may not be how to grow faster, but where growth should stop.','spotlight.future.copy':'The future is not delivered by one technology. It emerges from the accumulated direction of policy, cities, business, and everyday action.',
+  'nccu.title':'From Dah Hsian,<br><em>see sustainability across NCCU.</em>','nccu.intro':'You may think you are simply walking across campus. In fact, you are moving through an ecosystem. Sustainability is not only happening somewhere far away; it is unfolding in NCCU’s forests, streams, buildings, and everyday choices.','nccu.story1':'In the few minutes between a classroom and the library, birds cross the treetops, butterflies move through the grass, and lives you may never notice share the same ground with us.','nccu.story2':'Before seeing the numbers, take a guess: how much life does this campus hold, how much carbon does it store, and how much renewable energy does it produce?',
+  'nccu.quiz.bio.q':'Take a guess: how many living species have been recorded within NCCU?','nccu.quiz.bio.a':'Fewer than 50','nccu.quiz.bio.b':'Around 100','nccu.quiz.bio.c':'More than 150','nccu.quiz.bio.reveal':'Based on the San-Mao biodiversity survey and related records, 153 plant, mammal, bird, amphibian, reptile, and butterfly species are visible within the NCCU area. Records include pangolins, yellow-margined box turtles, and Taiwan blue magpies.','nccu.quiz.carbon.q':'You see a forested hillside. How much carbon does it store?','nccu.quiz.carbon.a':'About 1,000 tonnes','nccu.quiz.carbon.b':'About 10,000 tonnes','nccu.quiz.carbon.c':'More than 100,000 tonnes','nccu.quiz.carbon.reveal':'About 60 hectares of forest and hillside on campus are estimated to store 106,982 tonnes of carbon and sequester about 1,258 tonnes more each year. The shade you sit under is also working for the future.','nccu.quiz.solar.q':'How much solar electricity did NCCU generate in 2025?','nccu.quiz.solar.a':'About 67,000 kWh','nccu.quiz.solar.b':'About 670,000 kWh','nccu.quiz.solar.c':'About 6.7 million kWh','nccu.quiz.solar.reveal':'NCCU generated 673,371.10 kWh of solar electricity in 2025, including about 61,579 kWh at Dah Hsian Library. Buildings do not only consume energy; they can also participate in the energy transition.','nccu.unit.tons':'tonnes','nccu.unit.kwh':'kWh',
+  'nccu.future.q':'If the future is built from today’s choices, what would you most like NCCU to change over the next decade?','nccu.future.a':'More habitat and ecological space','nccu.future.b':'Lower-carbon buildings and energy','nccu.future.c':'A more circular campus lifestyle','nccu.future.d':'I want these changes to happen together','nccu.future.label':'NCCU’s long-term goal','nccu.future.reveal':'The 2025 NCCU Sustainability Report sets campus carbon neutrality as a long-term goal for 2048. But a sustainable NCCU is more than a carbon number: it also involves energy, resource circulation, ecology, campus resilience, and ways of living.','nccu.snapshot.title':'When the numbers finally appear together, they describe one campus.','nccu.snapshot.campus':'hectares of campus land','nccu.snapshot.conservation':'hectares of Conservation Coexistence Area (47.34%)','nccu.snapshot.species':'species visible within the NCCU area','nccu.snapshot.solar':'kWh of solar electricity (2025)','nccu.snapshot.carbon':'tonnes of estimated carbon storage','nccu.snapshot.goal':'long-term campus carbon-neutrality goal','nccu.source':'Source: National Chengchi University, 2025 Sustainability Report.','nccu.dahhsianTitle':'From NCCU’s sustainability journey, return to the library in front of you.','nccu.dahhsianBody':'Dah Hsian is not the whole story of a sustainable NCCU. It is one tangible case where water, glass, energy, rainwater, and other forms of life meet.',
+  'dahhsian.explore':'EXPLORE →',
+  'choice.q3.body':'Takeaway food, event materials, and single-use packaging make campus life convenient, but they also become part of the campus resource cycle.','choice.q4.body':'NCCU is expanding energy management, renewable energy, and digital monitoring. If equipment becomes more efficient, do our ways of living need to change as well?','choice.q5.body':'NCCU’s long-term goal is campus carbon neutrality by 2048. How much should we bear now, and how can the transition be made fairer?','choice.nextDahhsian':'See how NCCU faces the same trade-offs →',
+  'about.title':'About the Exhibition','about.whenLabel':'Dates','about.when':'November–December 2026','about.booksLabel':'Book Exhibition','about.books':'2F Display Area','about.filmsLabel':'Curated Film Selection','about.films':'4F','about.organizerLabel':'Organized by','about.organizer':'NCCU Library','about.methodTitle':'How did we build this reading journey?','about.methodBody':'The exhibition selects works across climate science, ecological ethics, consumption and economics, urban governance, and sustainability action, then connects books, films, and the NCCU campus into one path: understand the problem → see the impacts → rethink the human position → question existing models → look for paths of change.','about.path1':'Understand the problem','about.path2':'See the impacts','about.path3':'Rethink the human position','about.path4':'Question existing models','about.path5':'Look for paths of change','about.sourcesTitle':'Sources & curatorial basis ＋','about.source1':'National Chengchi University, 2025 Sustainability Report: campus energy, ecology, water, carbon sinks, and long-term sustainability goals.','about.source2':'NCCU Library holdings and the books and films selected for this exhibition.','about.source3':'Publication and original-work information for exhibited resources; English and Japanese pages prioritize verified original titles.','aria.nccuQuiz':'NCCU sustainability interactive'
+});
 
-// Multilingual book-title display metadata.
-// type: "official" = verified original/official alternate title;
-//       "exhibition" = translation prepared for this exhibition UI only.
-const BOOK_TITLE_DISPLAY={
-  en:{
-    '脆弱的一瞬':{title:"Our Fragile Moment: How Lessons from Earth's Past Can Help Us Survive the Climate Crisis",type:'official'},
-    '地球之路':{title:'The Earth Transformed: An Untold History',type:'official'},
-    '氣候賭局':{title:'The Climate Casino: Risk, Uncertainty, and Economics for a Warming World',type:'official'},
-    '暖化尚無定論':{title:"Unsettled: What Climate Science Tells Us, What It Doesn't, and Why It Matters",type:'official'},
-    '拯救地球':{title:'How to Save Our Planet: The Facts',type:'official'},
-    '熱浪會先殺死你':{title:'The Heat Will Kill You First: Life and Death on a Scorched Planet',type:'official'},
-    '野火':{title:'Fire Weather: A True Story from a Hotter World',type:'official'},
-    '在冰川消失之前':{title:'On Time and Water',type:'official'},
-    '尋找北極森林線':{title:'The Treeline: The Last Forest and the Future of Life on Earth',type:'official'},
-    '氣候緊急時代來了':{title:'The Uninhabitable Earth: Life After Warming',type:'official'},
-    '沙郡年紀':{title:'A Sand County Almanac and Other Writings',type:'official'},
-    '寂靜的春天':{title:'Silent Spring',type:'official'},
-    '與路共生':{title:'Crossings: How Road Ecology Is Shaping the Future of Our Planet',type:'official'},
-    '在大滅絕來臨前':{title:'Under a White Sky: The Nature of the Future',type:'official'},
-    '復原重生吧!里山.里地.里海':{title:'Reviving Satoyama, Satouchi, and Satoumi: Changes and Conservation Activities',type:'exhibition'},
-    '狂野人生':{title:"A Wild Idea: The True Story of Douglas Tompkins—The Greatest Conservationist (You've Never Heard Of)",type:'official'},
-    '成長的極限':{title:'Limits to Growth: The 30-Year Update',type:'official'},
-    '甜甜圈經濟學':{title:'Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist',type:'official'},
-    '從搖籃到搖籃':{title:'Cradle to Cradle: Remaking the Way We Make Things',type:'official'},
-    '循環經濟':{title:'Circular Economy',type:'exhibition'},
-    '垃圾之書':{title:'The Book of Trash',type:'exhibition'},
-    '永續時尚':{title:'The Fashion Conscious',type:'official'},
-    '永續時尚,穿出你的風格與價值!':{title:'The Fashion Conscious',type:'official'},
-    '別讓地球碳氣':{title:'How Bad Are Bananas? The Carbon Footprint of Everything',type:'official'},
-    '能源大騙局':{title:'Fueling Freedom: Exposing the Mad War on Energy',type:'official'},
-    '巫師與先知':{title:"The Wizard and the Prophet: Two Remarkable Scientists and Their Dueling Visions to Shape Tomorrow's World",type:'official'},
-    '世界又熱、又平、又擠':{title:'Hot, Flat, and Crowded: Why the World Needs a Green Revolution—and How We Can Renew Our Global Future',type:'official'},
-    '世界又熱.又平.又擠':{title:'Hot, Flat, and Crowded: Why the World Needs a Green Revolution—and How We Can Renew Our Global Future',type:'official'},
-    '我們可以選擇的未來':{title:'The Future We Choose: The Stubborn Optimist’s Guide to the Climate Crisis',type:'official'},
-    '如何避免氣候災難':{title:'How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need',type:'official'},
-    '水的價值':{title:'The Worth of Water: Our Story of Chasing Solutions to the World’s Greatest Challenge',type:'official'},
-    '永續發展的路口':{title:'At a Crossroads of Sustainable Development: The Ultimate Guide to the Practice of SDGs',type:'official'},
-    '永續發展的終局之戰':{title:'The Endgame of Sustainable Development: Theory and Practice of Climate Change Issues',type:'exhibition'},
-    '減碳社會學':{title:"Sociology of Decarbonization: Public Opinion and Challenges in Taiwan's Net-Zero Transition",type:'exhibition'},
-    '企業永續典範3.0 ESG如何從觀念到實踐?':{title:'Corporate Sustainability Model 3.0: From ESG Concepts to Practice',type:'exhibition'},
-    '企業永續典範3.0':{title:'Corporate Sustainability Model 3.0: From ESG Concepts to Practice',type:'exhibition'},
-    '為什麼有些街道走起來特別涼？':{title:'Why Do Some Streets Feel Cooler? Exploring Taiwan for Urban Cooling Solutions',type:'exhibition'},
-    '為什麼有些街道走起來特別涼?':{title:'Why Do Some Streets Feel Cooler? Exploring Taiwan for Urban Cooling Solutions',type:'exhibition'},
-    '終結空氣汙染':{title:'Clearing the Air: The Beginning and the End of Air Pollution',type:'official'},
-    '島都之河':{title:"A City's River: Water History and Water Culture of the Tamsui River and Taipei City",type:'official'}
-  },
-  ja:{
-    '復原重生吧!里山.里地.里海':{title:'よみがえれ里山・里地・里海：里山・里地の変化と保全活動',type:'official'},
-    '循環經濟':{title:'サーキュラーエコノミー',type:'exhibition'},
-    '垃圾之書':{title:'ごみの本',type:'exhibition'},
-    '永續發展的路口':{title:'持続可能な開発の岐路：SDGs実践のためのガイド',type:'exhibition'},
-    '永續發展的終局之戰':{title:'持続可能な開発の最終局面：気候変動問題の理論と実務',type:'exhibition'},
-    '減碳社會學':{title:'脱炭素社会学：台湾のネットゼロ転換をめぐる世論と課題',type:'exhibition'},
-    '企業永續典範3.0 ESG如何從觀念到實踐?':{title:'企業サステナビリティ・モデル3.0：ESGを理念から実践へ',type:'exhibition'},
-    '企業永續典範3.0':{title:'企業サステナビリティ・モデル3.0：ESGを理念から実践へ',type:'exhibition'},
-    '為什麼有些街道走起來特別涼？':{title:'なぜ涼しく感じる通りがあるのか？：台湾を歩いて探る都市冷却の可能性',type:'exhibition'},
-    '為什麼有些街道走起來特別涼?':{title:'なぜ涼しく感じる通りがあるのか？：台湾を歩いて探る都市冷却の可能性',type:'exhibition'},
-    '島都之河':{title:'都市の川：淡水河と台北、百年の水の歴史と共生',type:'exhibition'}
-  }
-};
+Object.assign(I18N.ja,{
+  'menu.dahhsian':'達賢から見る、サステナブルな政大','menu.about':'展示情報','meta.description':'達賢図書館のサステナビリティ書影展。気候、生態、消費、そして政大キャンパスを通して、私たちが共に選ぶ未来を考えます。',
+  'opening.thesis':'未来は、ただ待っていれば訪れる結果ではありません。今日の選択が少しずつ形づくっていくものです。',
+  'spotlight.cta':'この章の書籍を見る →','spotlight.earth.copy':'45億年の地球史から現在を見つめると、不安なのは気候が変化することだけではなく、その変化がこれほど速く進んでいることです。','spotlight.climate.copy':'気候危機は抽象的な世界平均気温ではありません。より長く、より頻繁で、より危険な暑さに人間の身体がどう耐えるかという問題です。','spotlight.residents.copy':'人間が環境を変えるとき、ほかの生命が負う代償はしばしば見えなくなります。サステナビリティは共生の問いでもあります。','spotlight.consume.copy':'人口、資源利用、生産が増え続けるなら、考え直すべきなのは成長を速める方法ではなく、成長をどこまで求めるのかかもしれません。','spotlight.future.copy':'未来は一つの技術がもたらす結果ではありません。政策、都市、企業、日常の行動が積み重なって方向をつくります。',
+  'nccu.title':'達賢の窓から、<br><em>サステナブルな政大を見る。</em>','nccu.intro':'ただキャンパスを歩いているだけだと思うかもしれません。けれど、ここは一つの生態系です。サステナビリティは遠い場所だけの話ではなく、政大の森、川、建物、日々の選択の中でも進んでいます。','nccu.story1':'教室から図書館までの数分の道のりにも、樹上を飛ぶ鳥、草地を横切る蝶、そして気づかないまま同じ土地を共有している多くの生命がいます。','nccu.story2':'数字を見る前に、少し予想してみましょう。このキャンパスにはどれほどの生命がいて、どれほどの炭素を蓄え、どれほどの再生可能エネルギーを生み出しているのでしょうか。',
+  'nccu.quiz.bio.q':'政大キャンパスでは、何種類の生命が記録されていると思いますか？','nccu.quiz.bio.a':'50種未満','nccu.quiz.bio.b':'約100種','nccu.quiz.bio.c':'150種以上','nccu.quiz.bio.reveal':'「三猫生態大踏査」などの資料によると、政大の範囲で確認できる植物、哺乳類、鳥類、両生類、爬虫類、蝶類は合計153種です。センザンコウ、セマルハコガメ、ヤマムスメなども記録されています。','nccu.quiz.carbon.q':'目の前の山林は、どれほどの炭素を蓄えているでしょうか？','nccu.quiz.carbon.a':'約1,000トン','nccu.quiz.carbon.b':'約10,000トン','nccu.quiz.carbon.c':'100,000トン以上','nccu.quiz.carbon.reveal':'学内約60ヘクタールの森林・斜面地には、約106,982トンの炭素が蓄えられ、年間約1,258トンをさらに固定すると推計されています。木陰で読書をするとき、森も未来のために働いています。','nccu.quiz.solar.q':'2025年、政大全体の太陽光発電量はどれくらいだったでしょうか？','nccu.quiz.solar.a':'約6.7万kWh','nccu.quiz.solar.b':'約67万kWh','nccu.quiz.solar.c':'約670万kWh','nccu.quiz.solar.reveal':'2025年の政大全体の太陽光発電量は673,371.10 kWhで、そのうち達賢図書館は約61,579 kWhでした。建物はエネルギーを消費するだけでなく、エネルギー転換の一部にもなれます。','nccu.unit.tons':'トン','nccu.unit.kwh':'kWh',
+  'nccu.future.q':'未来が今日の選択からつくられるなら、10年後の政大で最も変わってほしいことは何ですか？','nccu.future.a':'より多くの自然生息地','nccu.future.b':'より低炭素な建物とエネルギー','nccu.future.c':'より循環型のキャンパス生活','nccu.future.d':'これらすべてを一緒に進めたい','nccu.future.label':'政大の長期目標','nccu.future.reveal':'『2025 政大サステナビリティ報告書』は、2048年の長期目標として「キャンパスのカーボンニュートラル達成」を掲げています。ただし、サステナブルな政大は炭素の数字だけでなく、エネルギー、資源循環、生態、キャンパスのレジリエンス、暮らし方も含みます。','nccu.snapshot.title':'最後に数字を並べると、それらは同じ一つのキャンパスを描き出します。','nccu.snapshot.campus':'ヘクタールの校地','nccu.snapshot.conservation':'ヘクタールの保育共生地（47.34%）','nccu.snapshot.species':'政大範囲で確認できる生物種','nccu.snapshot.solar':'kWhの太陽光発電（2025）','nccu.snapshot.carbon':'トンの推定炭素貯留量','nccu.snapshot.goal':'キャンパス・カーボンニュートラル長期目標','nccu.source':'出典：国立政治大学『2025 Sustainability Report』。','nccu.dahhsianTitle':'政大全体のサステナビリティから、目の前の図書館へ戻ってみましょう。','nccu.dahhsianBody':'達賢はサステナブルな政大のすべてではありません。水、ガラス、エネルギー、雨水、そしてほかの生命が交わる、目に見える一つの事例です。',
+  'dahhsian.explore':'詳しく見る →',
+  'choice.q3.body':'テイクアウト、イベント資材、使い捨て包装は便利さをもたらす一方、キャンパスの資源循環の一部にもなります。','choice.q4.body':'政大ではエネルギー管理、再生可能エネルギー、デジタル監視を進めています。設備が効率化すれば、暮らし方も変える必要があるでしょうか。','choice.q5.body':'政大の長期目標は2048年のキャンパス・カーボンニュートラルです。そこへ向かうために、今どこまで負担し、どうすれば公正な移行にできるでしょうか。','choice.nextDahhsian':'政大が同じトレードオフにどう向き合うかを見る →',
+  'about.title':'展示情報','about.whenLabel':'会期','about.when':'2026年11–12月','about.booksLabel':'書籍展示','about.books':'2F 展示エリア','about.filmsLabel':'映像特集','about.films':'4F 展示エリア','about.organizerLabel':'主催','about.organizer':'国立政治大学図書館','about.methodTitle':'この読書ルートはどのように構成されたのか？','about.methodBody':'本展では、気候科学、生態倫理、消費と経済、都市ガバナンス、サステナビリティ行動の視点から資料を選び、本・映像・政大キャンパスを「問題を理解する → 影響を見る → 人間の位置を捉え直す → 既存の仕組みを問い直す → 変化の道を探す」という流れにつなげています。','about.path1':'問題を理解する','about.path2':'影響を見る','about.path3':'人間の位置を捉え直す','about.path4':'既存の仕組みを問い直す','about.path5':'変化の道を探す','about.sourcesTitle':'資料出典とキュレーションの根拠 ＋','about.source1':'国立政治大学『2025 Sustainability Report』：キャンパスのエネルギー、生態、水資源、炭素吸収源、長期目標。','about.source2':'国立政治大学図書館の所蔵資料、および本展で選定した書籍・映像資料。','about.source3':'展示資料の出版情報・原作品情報。英語・日本語ページの題名は確認できる正式原題を優先します。','aria.nccuQuiz':'政大サステナビリティ・インタラクティブ'
+});
 
-function normalizeBookTitleKey(title){
-  return String(title||'')
-    .replace(/^《|》$/g,'')
-    .replace(/\s*[:：]\s*.*/,'')
-    .trim();
-}
-
-function getBookDisplayInfo(title,lang=CURRENT_LANG){
-  const key=normalizeBookTitleKey(title);
-  if(lang==='zh-Hant')return {title:key,type:'original',original:key};
-  const direct=BOOK_TITLE_DISPLAY[lang]?.[key];
-  if(direct)return {...direct,original:key};
-  if(lang==='ja'){
-    const en=BOOK_TITLE_DISPLAY.en[key];
-    if(en?.type==='official')return {title:en.title,type:'official-original',original:key};
-  }
-  const fallback=BOOK_TITLE_DISPLAY.en[key];
-  if(lang==='en'&&fallback)return {...fallback,original:key};
-  return {title:key,type:'original',original:key};
-}
-
-function getBookDisplayTitle(title,lang=CURRENT_LANG){
-  return getBookDisplayInfo(title,lang).title;
-}
-
-function bookTranslationLabel(type,lang=CURRENT_LANG){
-  if(type!=='exhibition')return '';
-  return lang==='ja'?'展示用訳':lang==='en'?'Exhibition translation':'';
-}
-
-function renderBookTitles(lang=CURRENT_LANG){
-  document.querySelectorAll('[data-book-title]').forEach(el=>{
-    const original=el.dataset.bookTitle||'';
-    const info=getBookDisplayInfo(original,lang);
-    el.replaceChildren();
-    if(lang!=='zh-Hant'&&info.title&&info.title!==original){
-      const primary=document.createElement('span');
-      primary.className='book-title-primary';
-      primary.textContent=info.title;
-      el.append(primary);
-      const label=bookTranslationLabel(info.type,lang);
-      if(label){
-        const note=document.createElement('span');
-        note.className='book-title-note';
-        note.textContent=label;
-        el.append(note);
-      }
-      const secondary=document.createElement('span');
-      secondary.className='book-title-original';
-      secondary.lang='zh-Hant';
-      secondary.textContent=`《${original}》`;
-      el.append(secondary);
-    }else{
-      el.textContent=`《${original}》`;
-    }
-  });
-}
-
-window.BOOK_TITLE_DISPLAY=BOOK_TITLE_DISPLAY;
-window.getBookDisplayInfo=getBookDisplayInfo;
-window.getBookDisplayTitle=getBookDisplayTitle;
-window.bookTranslationLabel=bookTranslationLabel;
 
 const CHOICE_FEEDBACK_I18N={
   'zh-Hant':{
@@ -283,6 +199,84 @@ const HOTSPOT_I18N={
   }
 };
 
+Object.assign(HOTSPOT_I18N['zh-Hant'],{
+  lake:'水與生態｜達賢湖不只是景觀，也是一段校園水域生態。政大的水資源管理也把雨水回收納入智慧水校園的一部分。',
+  glass:'採光與鳥類｜透明與反射玻璃帶來光與景觀，也可能成為鳥類無法辨識的障礙。從窗殺防治到建築設計，這也是校園生態治理的一部分。',
+  building:'舒適與能源｜2025 年達賢圖書館太陽光電發電約 61,579 度；館內另設 250 m³ 雨水回收池，讓建築同時面對舒適、能源與水資源的選擇。',
+  shore:'人的空間與其他生命｜一個為人設計的休憩空間，也同時存在於其他生命的環境裡。當校園成為保育共生地，人的使用方式也成為生態的一部分。'
+});
+Object.assign(HOTSPOT_I18N.en,{
+  lake:'Water & ecology | Dah Hsian Lake is more than scenery. NCCU also treats rainwater recovery as part of a broader smart-water campus strategy.',
+  glass:'Daylight & birds | Transparent and reflective glass offers daylight and views but can become an invisible barrier to birds. Collision prevention is part of campus ecological governance.',
+  building:'Comfort & energy | Dah Hsian Library generated about 61,579 kWh of solar electricity in 2025 and has a 250 m³ rainwater-recovery tank, putting comfort, energy, and water in the same design conversation.',
+  shore:'Human space & other life | A leisure space designed for people also exists inside the habitat of other living beings. In a Conservation Coexistence Area, human use is itself part of ecology.'
+});
+Object.assign(HOTSPOT_I18N.ja,{
+  lake:'水と生態｜達賢湖は景観だけではありません。政大では雨水回収もスマート・ウォーター・キャンパスの一部として位置づけています。',
+  glass:'採光と鳥｜透明・反射ガラスは光と景観をもたらす一方、鳥には見えない障害物になることがあります。バードストライク対策もキャンパス生態管理の一部です。',
+  building:'快適さとエネルギー｜達賢図書館は2025年に約61,579 kWhの太陽光発電を行い、250 m³の雨水回収槽も備えています。快適さ、エネルギー、水資源を同じ建築の中で考える事例です。',
+  shore:'人の空間とほかの生命｜人のための休憩空間も、ほかの生命の環境の中に存在しています。保育共生地では、人の使い方そのものも生態の一部です。'
+});
+
+
+const BOOK_TITLE_DISPLAY={
+  '脆弱的一瞬':{en:{title:"Our Fragile Moment: How Lessons from Earth's Past Can Help Us Survive the Climate Crisis",type:'official'},ja:{title:"Our Fragile Moment: How Lessons from Earth's Past Can Help Us Survive the Climate Crisis",type:'official'}},
+  '地球之路':{en:{title:'The Earth Transformed: An Untold History',type:'official'},ja:{title:'The Earth Transformed: An Untold History',type:'official'}},
+  '氣候賭局':{en:{title:'The Climate Casino: Risk, Uncertainty, and Economics for a Warming World',type:'official'},ja:{title:'The Climate Casino: Risk, Uncertainty, and Economics for a Warming World',type:'official'}},
+  '暖化尚無定論':{en:{title:"Unsettled: What Climate Science Tells Us, What It Doesn't, and Why It Matters",type:'official'},ja:{title:"Unsettled: What Climate Science Tells Us, What It Doesn't, and Why It Matters",type:'official'}},
+  '拯救地球':{en:{title:'How to Save Our Planet: The Facts',type:'official'},ja:{title:'How to Save Our Planet: The Facts',type:'official'}},
+  '熱浪會先殺死你':{en:{title:'The Heat Will Kill You First: Life and Death on a Scorched Planet',type:'official'},ja:{title:'The Heat Will Kill You First: Life and Death on a Scorched Planet',type:'official'}},
+  '野火':{en:{title:'Fire Weather: A True Story from a Hotter World',type:'official'},ja:{title:'Fire Weather: A True Story from a Hotter World',type:'official'}},
+  '在冰川消失之前':{en:{title:'On Time and Water',type:'official'},ja:{title:'On Time and Water',type:'official'}},
+  '尋找北極森林線':{en:{title:'The Treeline: The Last Forest and the Future of Life on Earth',type:'official'},ja:{title:'The Treeline: The Last Forest and the Future of Life on Earth',type:'official'}},
+  '氣候緊急時代來了':{en:{title:'The Uninhabitable Earth: Life After Warming',type:'official'},ja:{title:'The Uninhabitable Earth: Life After Warming',type:'official'}},
+  '寂靜的春天':{en:{title:'Silent Spring',type:'official'},ja:{title:'Silent Spring',type:'official'}},
+  '沙郡年紀':{en:{title:'A Sand County Almanac and Other Writings',type:'official'},ja:{title:'A Sand County Almanac and Other Writings',type:'official'}},
+  '與路共生':{en:{title:'Crossings: How Road Ecology Is Shaping the Future of Our Planet',type:'official'},ja:{title:'Crossings: How Road Ecology Is Shaping the Future of Our Planet',type:'official'}},
+  '在大滅絕來臨前':{en:{title:'Under a White Sky: The Nature of the Future',type:'official'},ja:{title:'Under a White Sky: The Nature of the Future',type:'official'}},
+  '復原重生吧！里山・里地・里海':{en:{title:'Reviving Satoyama, Satoyachi, and Satoumi',type:'exhibition'},ja:{title:'よみがえれ里山・里地・里海―里山・里地の変化と保全活動',type:'official'}},
+  '狂野人生':{en:{title:"A Wild Idea: The True Story of Douglas Tompkins—The Greatest Conservationist (You've Never Heard Of)",type:'official'},ja:{title:"A Wild Idea: The True Story of Douglas Tompkins—The Greatest Conservationist (You've Never Heard Of)",type:'official'}},
+  '成長的極限':{en:{title:'Limits to Growth: The 30-Year Update',type:'official'},ja:{title:'Limits to Growth: The 30-Year Update',type:'official'}},
+  '甜甜圈經濟學':{en:{title:'Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist',type:'official'},ja:{title:'Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist',type:'official'}},
+  '從搖籃到搖籃':{en:{title:'Cradle to Cradle: Remaking the Way We Make Things',type:'official'},ja:{title:'Cradle to Cradle: Remaking the Way We Make Things',type:'official'}},
+  '循環經濟':{en:{title:'Circular Economy',type:'official'},ja:{title:'Circular Economy',type:'official'}},
+  '垃圾之書':{en:{title:'The Book of Waste',type:'exhibition'},ja:{title:'廃棄物の本',type:'exhibition'}},
+  '永續時尚':{en:{title:'The Fashion Conscious',type:'official'},ja:{title:'The Fashion Conscious',type:'official'}},
+  '別讓地球碳氣':{en:{title:'How Bad Are Bananas? The Carbon Footprint of Everything',type:'official'},ja:{title:'How Bad Are Bananas? The Carbon Footprint of Everything',type:'official'}},
+  '能源大騙局':{en:{title:'Fueling Freedom: Exposing the Mad War on Energy',type:'official'},ja:{title:'Fueling Freedom: Exposing the Mad War on Energy',type:'official'}},
+  '巫師與先知':{en:{title:"The Wizard and the Prophet: Two Remarkable Scientists and Their Dueling Visions to Shape Tomorrow's World",type:'official'},ja:{title:"The Wizard and the Prophet: Two Remarkable Scientists and Their Dueling Visions to Shape Tomorrow's World",type:'official'}},
+  '世界又熱、又平、又擠':{en:{title:'Hot, Flat, and Crowded: Why the World Needs a Green Revolution—and How We Can Renew Our Global Future',type:'official'},ja:{title:'Hot, Flat, and Crowded',type:'official'}},
+  '我們可以選擇的未來':{en:{title:"The Future We Choose: The Stubborn Optimist's Guide to the Climate Crisis",type:'official'},ja:{title:"The Future We Choose: The Stubborn Optimist's Guide to the Climate Crisis",type:'official'}},
+  '如何避免氣候災難':{en:{title:'How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need',type:'official'},ja:{title:'How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need',type:'official'}},
+  '水的價值':{en:{title:"The Worth of Water: Our Story of Chasing Solutions to the World's Greatest Challenge",type:'official'},ja:{title:"The Worth of Water: Our Story of Chasing Solutions to the World's Greatest Challenge",type:'official'}},
+  '永續發展的路口':{en:{title:'At a Crossroads of Sustainable Development',type:'exhibition'},ja:{title:'持続可能な開発の岐路',type:'exhibition'}},
+  '永續發展的終局之戰':{en:{title:'The Endgame of Sustainable Development',type:'exhibition'},ja:{title:'持続可能な開発の最終局面',type:'exhibition'}},
+  '減碳社會學':{en:{title:'Sociology of Decarbonization',type:'exhibition'},ja:{title:'脱炭素の社会学',type:'exhibition'}},
+  '企業永續典範3.0':{en:{title:'Corporate Sustainability Models 3.0',type:'exhibition'},ja:{title:'企業サステナビリティ・モデル 3.0',type:'exhibition'}},
+  '為什麼有些街道走起來特別涼？':{en:{title:'Why Do Some Streets Feel Cooler?',type:'exhibition'},ja:{title:'なぜ歩くと涼しく感じる通りがあるのか？',type:'exhibition'}},
+  '終結空氣汙染':{en:{title:'Clearing the Air: The Beginning and the End of Air Pollution',type:'official'},ja:{title:'Clearing the Air: The Beginning and the End of Air Pollution',type:'official'}},
+  '島都之河':{en:{title:"A City's River: Water History and Water Culture of the Tamsui River and Taipei City",type:'exhibition'},ja:{title:'島都の川―淡水河と台北の水の歴史と文化',type:'exhibition'}}};
+
+function normalizeBookKey(title){
+  return String(title||'').replace(/[《》]/g,'').replace(/\s*[:：].*$/,'').trim();
+}
+function getBookDisplayInfo(original,lang=CURRENT_LANG){
+  const key=normalizeBookKey(original);
+  if(lang==='zh-Hant')return {title:key,type:'original'};
+  const item=BOOK_TITLE_DISPLAY[key];
+  if(item&&item[lang])return item[lang];
+  return {title:key,type:'original'};
+}
+function getBookDisplayTitle(original,lang=CURRENT_LANG){return getBookDisplayInfo(original,lang).title;}
+function bookTranslationLabel(type,lang=CURRENT_LANG){
+  if(type!=='exhibition')return '';
+  return lang==='ja'?'展示用訳':lang==='en'?'Exhibition translation':'';
+}
+window.getBookDisplayInfo=getBookDisplayInfo;
+window.getBookDisplayTitle=getBookDisplayTitle;
+window.bookTranslationLabel=bookTranslationLabel;
+
+
 function safeGetStorage(key){
   try{return window.localStorage.getItem(key);}catch(err){return null;}
 }
@@ -342,7 +336,6 @@ function applyLanguage(lang,{syncUrl=true}={}){
     btn.classList.toggle('active',active);
     btn.setAttribute('aria-pressed',String(active));
   });
-  renderBookTitles(CURRENT_LANG);
   const meta=document.querySelector('meta[name="description"]');
   if(meta)meta.setAttribute('content',t('meta.description'));
   document.body.dataset.lang=CURRENT_LANG;
