@@ -115,14 +115,60 @@
     $$('[data-book-title]').forEach(renderBookTitle);
   }
 
+  function updateFeedbackForm() {
+    const forms = window.FEEDBACK_FORMS || {};
+    const config = forms[CURRENT_LANG] || forms['zh-Hant'] || {};
+    const link = $('#feedbackFormLink');
+    const qr = $('#feedbackQr');
+    const placeholder = $('#feedbackQrPlaceholder');
+
+    if (link) {
+      if (config.url) {
+        link.href = config.url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.setAttribute('aria-disabled', 'false');
+      } else {
+        link.removeAttribute('href');
+        link.removeAttribute('target');
+        link.removeAttribute('rel');
+        link.setAttribute('aria-disabled', 'true');
+      }
+    }
+
+    if (qr && placeholder) {
+      const showPlaceholder = () => {
+        qr.hidden = true;
+        qr.removeAttribute('src');
+        placeholder.hidden = false;
+      };
+      if (config.qr) {
+        qr.onload = () => {
+          qr.hidden = false;
+          placeholder.hidden = true;
+        };
+        qr.onerror = showPlaceholder;
+        qr.src = config.qr;
+        if (qr.complete && qr.naturalWidth > 0) {
+          qr.hidden = false;
+          placeholder.hidden = true;
+        }
+      } else {
+        showPlaceholder();
+      }
+    }
+  }
+
   function initLanguage() {
     $$('.lang-btn').forEach(btn => btn.addEventListener('click', () => applyLanguage(btn.dataset.lang)));
     applyLanguage(CURRENT_LANG, { syncUrl: false });
     updateCollectionLinks();
     updateBookTitles();
+    updateFeedbackForm();
     window.addEventListener('languagechange', () => {
       updateCollectionLinks();
       updateBookTitles();
+      updateFeedbackForm();
       rerenderLanguageSensitiveUI();
     });
   }

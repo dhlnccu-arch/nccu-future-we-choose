@@ -347,3 +347,46 @@ function applyLanguage(lang,{syncUrl=true}={}){
   }
   window.dispatchEvent(new CustomEvent('languagechange',{detail:{lang:CURRENT_LANG}}));
 }
+
+/* v1.6.3 — audience contribution / QR feedback */
+Object.assign(I18N['zh-Hant'],{
+  'menu.feedback':'留下一個選擇',
+  'feedback.title':'離開以前，<br><em>留下一個選擇。</em>',
+  'feedback.line1':'今天的回答不會立刻改變世界。',
+  'feedback.line2':'但每一個未來，都從一個選擇開始。',
+  'feedback.prompt':'掃描 QR Code，留下你的想法。',
+  'feedback.cta':'留下我的選擇 →',
+  'feedback.note':'回覆採匿名方式；是否同意公開引用可由你自行選擇。',
+  'feedback.privacy':'本表單不蒐集姓名、電子郵件及其他個人識別資訊。',
+  'feedback.pending':'表單連結設定後開放',
+  'feedback.scanLabel':'用手機掃描，留下你的選擇',
+  'feedback.qrAlt':'觀眾回饋表單 QR Code'
+});
+
+Object.assign(I18N.en,{
+  'menu.feedback':'Leave One Choice',
+  'feedback.title':'Before you leave,<br><em>leave one choice behind.</em>',
+  'feedback.line1':'Your answer may not change the world today.',
+  'feedback.line2':'But every future begins with a choice.',
+  'feedback.prompt':'Scan the QR code and leave us one thought.',
+  'feedback.cta':'Leave my choice →',
+  'feedback.note':'Responses are anonymous. You can choose whether your words may be quoted publicly.',
+  'feedback.privacy':'This form does not collect names, email addresses, or other personally identifying information.',
+  'feedback.pending':'The response form will open once its link is configured.',
+  'feedback.scanLabel':'Scan with your phone to leave your choice',
+  'feedback.qrAlt':'QR code for the audience response form'
+});
+
+Object.assign(I18N.ja,{
+  'menu.feedback':'ひとつの選択を残す',
+  'feedback.title':'帰る前に、<br><em>ひとつの選択を残してください。</em>',
+  'feedback.line1':'今日の答えが、すぐに世界を変えるわけではありません。',
+  'feedback.line2':'でも、どんな未来も一つの選択から始まります。',
+  'feedback.prompt':'QRコードを読み取り、あなたの考えを残してください。',
+  'feedback.cta':'私の選択を残す →',
+  'feedback.note':'回答は匿名です。あなたの言葉を公開引用してよいかどうかは、ご自身で選べます。',
+  'feedback.privacy':'このフォームでは、氏名・メールアドレス・その他の個人識別情報を収集しません。',
+  'feedback.pending':'フォームのリンク設定後に利用できます。',
+  'feedback.scanLabel':'スマートフォンで読み取り、あなたの選択を残してください',
+  'feedback.qrAlt':'来場者フィードバックフォームのQRコード'
+});
