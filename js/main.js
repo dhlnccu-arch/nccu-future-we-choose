@@ -120,10 +120,11 @@
     const config = forms[CURRENT_LANG] || forms['zh-Hant'] || {};
     const link = $('#feedbackFormLink');
     const qr = $('#feedbackQr');
-    const placeholder = $('#feedbackQrPlaceholder');
+    const frame = $('#feedbackQrFrame');
+    const kiosk = typeof isKioskMode === 'function' && isKioskMode();
 
     if (link) {
-      if (config.url) {
+      if (config.url && !kiosk) {
         link.href = config.url;
         link.target = '_blank';
         link.rel = 'noopener noreferrer';
@@ -136,25 +137,26 @@
       }
     }
 
-    if (qr && placeholder) {
-      const showPlaceholder = () => {
+    if (qr && frame) {
+      const hideQr = () => {
         qr.hidden = true;
         qr.removeAttribute('src');
-        placeholder.hidden = false;
+        frame.hidden = true;
       };
       if (config.qr) {
+        frame.hidden = false;
         qr.onload = () => {
           qr.hidden = false;
-          placeholder.hidden = true;
+          frame.hidden = false;
         };
-        qr.onerror = showPlaceholder;
+        qr.onerror = hideQr;
         qr.src = config.qr;
         if (qr.complete && qr.naturalWidth > 0) {
           qr.hidden = false;
-          placeholder.hidden = true;
+          frame.hidden = false;
         }
       } else {
-        showPlaceholder();
+        hideQr();
       }
     }
   }
@@ -499,6 +501,28 @@
     request();
   }
 
+  /* ---------------- Kiosk navigation guard ---------------- */
+  function initKioskNavigationGuard() {
+    if (typeof isKioskMode !== 'function' || !isKioskMode()) return;
+    body.classList.add('kiosk-mode');
+
+    document.addEventListener('click', event => {
+      const target = event.target instanceof Element ? event.target.closest('a[href]') : null;
+      if (!target) return;
+      const rawHref = target.getAttribute('href') || '';
+      if (!rawHref || rawHref.startsWith('#')) return;
+
+      let url;
+      try { url = new URL(target.href, location.href); } catch { return; }
+      const isWebLink = url.protocol === 'http:' || url.protocol === 'https:';
+      const staysOnExhibitionSite = isWebLink && url.origin === location.origin;
+      if (staysOnExhibitionSite) return;
+
+      event.preventDefault();
+      event.stopPropagation();
+    }, true);
+  }
+
   /* ---------------- Kiosk reset ---------------- */
   function resetForKiosk() {
     setMenu(false, { restoreFocus: false });
@@ -540,6 +564,7 @@
     initCampusQuiz();
     initChoices();
     initHeroParallax();
+    initKioskNavigationGuard();
     initIdleReset();
   }
 
