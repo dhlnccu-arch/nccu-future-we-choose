@@ -74,8 +74,10 @@
   }
 
   function updateCollectionLinks() {
-    const main = $('#bookListLink');
-    if (main) main.href = internalUrl('book-list.html');
+    const books = $('#bookListLink');
+    if (books) books.href = internalUrl('book-list.html');
+    const films = $('#filmListLink');
+    if (films) films.href = internalUrl('film-list.html');
     $$('[data-collection-link]').forEach(link => {
       link.href = internalUrl('book-list.html', { filter: link.dataset.collectionLink });
     });

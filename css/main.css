@@ -123,6 +123,7 @@ body[data-lang="ja"]{--serif:"Noto Serif JP","Yu Mincho","Hiragino Mincho ProN",
 .collection-link:hover{transform:translateY(-2px)}
 
 .collection-button{margin-top:5vh;border:1px solid #183c50;background:#183c50;color:#f4f1e8;padding:14px 22px;border-radius:999px;font-weight:800;transition:transform .2s ease,background .2s ease}.collection-button:hover{background:#24556c}
+.collection-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:5vh}.collection-actions .collection-button{margin-top:0}.collection-button-secondary{background:transparent;color:#183c50}.collection-button-secondary:hover{background:#dfe5df;color:#183c50}
 
 /* ===== v1.4 editorial refinements ===== */
 .opening-signals{
