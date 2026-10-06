@@ -199,30 +199,42 @@
     building: { index: '03', titleKey: 'dahhsian.buildingTitle' },
     shore: { index: '04', titleKey: 'dahhsian.shoreTitle' }
   };
-  let activeHotspot = 'lake';
+  let activeHotspot = '';
+
+  function renderHotspots() {
+    $$('.dahhsian-card').forEach(card => {
+      const key = card.dataset.hotspot;
+      const open = key === activeHotspot;
+      card.classList.toggle('active', open);
+      card.setAttribute('aria-pressed', String(open));
+      card.setAttribute('aria-expanded', String(open));
+
+      const panel = $('.dahhsian-card-detail', card);
+      if (!panel) return;
+      panel.setAttribute('aria-hidden', String(!open));
+
+      const title = $('.dahhsian-card-detail-title', panel);
+      const note = $('.dahhsian-card-detail-note', panel);
+      if (title) title.textContent = t(hotspotMeta[key]?.titleKey || '');
+      if (note && typeof HOTSPOT_I18N !== 'undefined') {
+        note.textContent = HOTSPOT_I18N[CURRENT_LANG]?.[key] || HOTSPOT_I18N['zh-Hant']?.[key] || '';
+      }
+    });
+  }
 
   function showHotspot(key) {
     if (!hotspotMeta[key]) return;
-    activeHotspot = key;
-    $$('.dahhsian-card').forEach(card => {
-      const on = card.dataset.hotspot === key;
-      card.classList.toggle('active', on);
-      card.setAttribute('aria-pressed', String(on));
-    });
-    const index = $('.hotspot-index');
-    const title = $('.hotspot-title');
-    const note = $('.hotspot-note');
-    if (index) index.textContent = hotspotMeta[key].index;
-    if (title) title.textContent = t(hotspotMeta[key].titleKey);
-    if (note && typeof HOTSPOT_I18N !== 'undefined') note.textContent = HOTSPOT_I18N[CURRENT_LANG]?.[key] || HOTSPOT_I18N['zh-Hant']?.[key] || '';
+    activeHotspot = activeHotspot === key ? '' : key;
+    renderHotspots();
   }
 
   function initHotspots() {
     $$('.dahhsian-card').forEach(card => {
-      card.setAttribute('aria-pressed', String(card.dataset.hotspot === activeHotspot));
+      card.setAttribute('aria-pressed', 'false');
+      card.setAttribute('aria-expanded', 'false');
       card.addEventListener('click', () => showHotspot(card.dataset.hotspot));
     });
-    showHotspot(activeHotspot);
+    renderHotspots();
   }
 
   /* ---------------- NCCU report interactions ---------------- */
@@ -403,7 +415,7 @@
   }
 
   function rerenderLanguageSensitiveUI() {
-    showHotspot(activeHotspot);
+    renderHotspots();
     choiceOrder.forEach(key => {
       const current = choiceState[key];
       if (!current) return;
@@ -447,7 +459,8 @@
     if (typeof applyLanguage === 'function' && CURRENT_LANG !== 'zh-Hant') applyLanguage('zh-Hant');
     resetCampusQuiz();
     resetChoices();
-    showHotspot('lake');
+    activeHotspot = '';
+    renderHotspots();
     $$('details[open]').forEach(d => { d.open = false; });
     if (document.activeElement instanceof HTMLElement && document.activeElement !== body) document.activeElement.blur();
     window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' });
