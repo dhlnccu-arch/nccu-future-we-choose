@@ -78,6 +78,10 @@
     if (books) books.href = internalUrl('book-list.html');
     const films = $('#filmListLink');
     if (films) films.href = internalUrl('film-list.html');
+    const footerBooks = $('#footerBookListLink');
+    if (footerBooks) footerBooks.href = internalUrl('book-list.html');
+    const footerFilms = $('#footerFilmListLink');
+    if (footerFilms) footerFilms.href = internalUrl('film-list.html');
     $$('[data-collection-link]').forEach(link => {
       link.href = internalUrl('book-list.html', { filter: link.dataset.collectionLink });
     });

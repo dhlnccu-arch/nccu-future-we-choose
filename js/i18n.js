@@ -1,7 +1,7 @@
 const LANGUAGE_CONFIG={
-  'zh-Hant':{query:'zh',htmlLang:'zh-Hant',title:'我們選擇的未來｜達賢圖書館永續書影展'},
-  en:{query:'en',htmlLang:'en',title:'The Future We Choose | Dah Hsian Sustainability Book & Film Exhibition'},
-  ja:{query:'ja',htmlLang:'ja',title:'私たちが選ぶ未来｜達賢図書館 サステナビリティ・ブック＆フィルム展'}
+  'zh-Hant':{query:'zh',htmlLang:'zh-Hant',title:'我們選擇的未來｜國立政治大學圖書館永續書影展'},
+  en:{query:'en',htmlLang:'en',title:'The Future We Choose | NCCU Libraries Sustainability Book & Film Exhibition'},
+  ja:{query:'ja',htmlLang:'ja',title:'私たちが選ぶ未来｜国立政治大学図書館 サステナビリティ・ブック＆フィルム展'}
 };
 
 const I18N={
@@ -93,6 +93,39 @@ Object.assign(I18N.ja,{
   'about.title':'展示情報','about.whenLabel':'会期','about.when':'2026年11–12月','about.booksLabel':'書籍展示','about.books':'2F 展示エリア','about.filmsLabel':'映像特集','about.films':'4F 展示エリア','about.organizerLabel':'主催','about.organizer':'国立政治大学図書館','about.methodTitle':'この読書ルートはどのように構成されたのか？','about.methodBody':'本展では、気候科学、生態倫理、消費と経済、都市ガバナンス、サステナビリティ行動の視点から資料を選び、本・映像・政大キャンパスを「問題を理解する → 影響を見る → 人間の位置を捉え直す → 既存の仕組みを問い直す → 変化の道を探す」という流れにつなげています。','about.path1':'問題を理解する','about.path2':'影響を見る','about.path3':'人間の位置を捉え直す','about.path4':'既存の仕組みを問い直す','about.path5':'変化の道を探す','about.sourcesTitle':'資料出典とキュレーションの根拠 ＋','about.source1':'国立政治大学『2025 Sustainability Report』：キャンパスのエネルギー、生態、水資源、炭素吸収源、長期目標。','about.source2':'国立政治大学図書館の所蔵資料、および本展で選定した書籍・映像資料。','about.source3':'展示資料の出版情報・原作品情報。英語・日本語ページの題名は確認できる正式原題を優先します。','aria.nccuQuiz':'政大サステナビリティ・インタラクティブ'
 });
 
+
+
+/* v1.7.0 — clearer homepage orientation, programs, official dates, footer */
+Object.assign(I18N['zh-Hant'],{
+  'menu.home':'展覽首頁','menu.themes':'五大主題','menu.nccu':'永續政大','menu.programs':'延伸活動','menu.collectionShort':'完整書影單','menu.interactive':'互動體驗',
+  'hero.kicker':'國立政治大學圖書館｜永續書影展','hero.intro':'從氣候、生態、消費到政大校園，透過書籍、影片與互動，重新思考我們如何生活，以及我們想共同選擇什麼樣的未來。','hero.date':'2026.11.02–12.31','hero.booksLocation':'書展｜達賢圖書館 2F 展示書區','hero.filmsLocation':'影展｜達賢圖書館 4F 影展區','hero.actionsAria':'展覽快速入口','hero.ctaThemes':'開始探索五大主題 →','hero.ctaCollection':'瀏覽完整書影單 →','hero.ctaInteractive':'參與永續互動 →','hero.scroll':'向下探索完整展覽',
+  'start.title':'你可以在這裡……','start.lead':'第一次來到這裡？從下面四個入口開始，依你想看的內容直接進入展覽。','start.themesTitle':'探索五大主題','start.themesBody':'從氣候、生態到消費與未來選擇，沿著策展路徑往下閱讀。','start.nccuTitle':'看見永續政大','start.nccuBody':'從政大永續報告書與達賢環境，看校園裡正在發生的改變。','start.collectionTitle':'找到一本書或一部電影','start.collectionBody':'瀏覽完整書單與影展片單，查看館藏位置與線上資源。','start.choiceTitle':'留下你的選擇','start.choiceBody':'完成永續取捨互動，最後寫下你想帶往未來的一個改變。','start.enter':'進入 →',
+  'programs.title':'延伸活動','programs.lead':'除了閱讀與觀看，也一起坐下來談、一起玩。展期內將搭配主題讀書會與永續桌遊工作坊。','programs.readingTitle':'主題讀書會','programs.readingBody':'從本展選書出發，一起討論氣候、生活，以及我們能選擇的未來。','programs.gameTitle':'永續桌遊工作坊','programs.gameBody':'從遊戲中的資源、選擇與取捨，體驗永續為什麼很少只有一個標準答案。','programs.dateLabel':'活動日期','programs.tba':'即將公布','programs.detailsSoon':'活動詳情即將公布','programs.note':'最新活動時間、地點與報名方式，以政大圖書館公告為準。',
+  'about.when':'2026 年 11 月 2 日–12 月 31 日',
+  'footer.title':'《我們選擇的未來》｜在失衡的地球上，重新學習生活','footer.navAria':'頁尾導覽','footer.home':'展覽首頁','footer.books':'完整書單','footer.films':'影展片單','footer.programs':'延伸活動','footer.top':'回到頂端 ↑',
+  'mobile.sections':'主題','mobile.programs':'活動',
+  'meta.description':'國立政治大學圖書館永續書影展，從氣候、生態、消費到政大校園，透過書籍、影片與互動重新思考我們共同選擇的未來。'
+});
+Object.assign(I18N.en,{
+  'menu.home':'Exhibition Home','menu.themes':'Five Themes','menu.nccu':'Sustainable NCCU','menu.programs':'Programs','menu.collectionShort':'Books & Films','menu.interactive':'Interactive','menu.about':'Exhibition Info',
+  'hero.kicker':'NATIONAL CHENGCHI UNIVERSITY LIBRARIES · SUSTAINABILITY BOOK & FILM EXHIBITION','hero.intro':'From climate and ecology to consumption and the NCCU campus, explore books, films, and interactive questions about how we live—and what future we want to choose together.','hero.date':'NOV 2–DEC 31, 2026','hero.booksLocation':'BOOK EXHIBITION · DAH HSIAN SEETOO LIBRARY · 2F DISPLAY AREA','hero.filmsLocation':'CURATED FILM SELECTION · DAH HSIAN SEETOO LIBRARY · 4F','hero.actionsAria':'Quick exhibition links','hero.ctaThemes':'Explore the Five Themes →','hero.ctaCollection':'Browse Books & Films →','hero.ctaInteractive':'Try the Interactive →','hero.scroll':'EXPLORE THE FULL EXHIBITION',
+  'start.title':'What can you do here?','start.lead':'First time here? Start with any of these four paths and go directly to what you want to explore.','start.themesTitle':'Explore the Five Themes','start.themesBody':'Follow the curatorial journey from climate and ecology to consumption and future choices.','start.nccuTitle':'See a Sustainable NCCU','start.nccuBody':'Connect the NCCU Sustainability Report with the campus and the environment around Dah Hsian.','start.collectionTitle':'Find a Book or Film','start.collectionBody':'Browse the full book and film lists, locations, catalog records, and online resources.','start.choiceTitle':'Leave Your Choice','start.choiceBody':'Try the sustainability trade-off interactive, then leave one change you want to carry into the future.','start.enter':'Enter →',
+  'programs.title':'Programs','programs.lead':'Beyond reading and watching, the exhibition also invites you to sit down, talk, and play through a thematic reading group and sustainability board-game workshop.','programs.readingTitle':'Thematic Reading Group','programs.readingBody':'Start from the exhibition books and talk together about climate, everyday life, and the future we can choose.','programs.gameTitle':'Sustainability Board-Game Workshop','programs.gameBody':'Use resources, choices, and trade-offs in play to experience why sustainability rarely has a single correct answer.','programs.dateLabel':'Date','programs.tba':'To be announced','programs.detailsSoon':'Details coming soon','programs.note':'For the latest dates, venues, and registration details, please refer to NCCU Libraries announcements.',
+  'about.when':'Nov 2–Dec 31, 2026',
+  'footer.title':'The Future We Choose · Learning to live again on an unbalanced planet','footer.navAria':'Footer navigation','footer.home':'Exhibition Home','footer.books':'Full Book List','footer.films':'Film Selection','footer.programs':'Programs','footer.top':'Back to Top ↑',
+  'mobile.sections':'Themes','mobile.programs':'Programs',
+  'meta.description':'An NCCU Libraries sustainability book and film exhibition connecting climate, ecology, consumption, the campus, and the choices that shape our shared future.'
+});
+Object.assign(I18N.ja,{
+  'menu.home':'展示トップ','menu.themes':'5つのテーマ','menu.nccu':'サステナブルな政大','menu.programs':'関連イベント','menu.collectionShort':'書籍・映像一覧','menu.interactive':'インタラクティブ','menu.about':'展示情報',
+  'hero.kicker':'国立政治大学図書館｜サステナビリティ・ブック＆フィルム展','hero.intro':'気候、生態、消費、そして政大キャンパスまで。本・映像・インタラクティブを通して、私たちの暮らしと、ともに選びたい未来を考えます。','hero.date':'2026年11月2日–12月31日','hero.booksLocation':'書籍展示｜達賢図書館 2F 展示エリア','hero.filmsLocation':'映像特集｜達賢図書館 4F 展示エリア','hero.actionsAria':'展示のクイックリンク','hero.ctaThemes':'5つのテーマを探索 →','hero.ctaCollection':'書籍・映像一覧を見る →','hero.ctaInteractive':'インタラクティブに参加 →','hero.scroll':'展示全体を下へ見る',
+  'start.title':'ここでできること','start.lead':'初めての方は、次の4つの入口から気になる内容へ進んでください。','start.themesTitle':'5つのテーマを探索','start.themesBody':'気候、生態、消費、未来の選択へと続くキュレーションの流れをたどります。','start.nccuTitle':'サステナブルな政大を見る','start.nccuBody':'政大のサステナビリティ報告書と達賢周辺の環境から、キャンパスで進む変化を見ます。','start.collectionTitle':'本や映像を探す','start.collectionBody':'全書籍・映像リストから、所蔵場所やオンライン資料を確認できます。','start.choiceTitle':'あなたの選択を残す','start.choiceBody':'サステナビリティのトレードオフを体験し、未来へ持っていきたい一つの変化を書き残します。','start.enter':'見る →',
+  'programs.title':'関連イベント','programs.lead':'読む・観るだけでなく、一緒に話し、一緒に遊ぶ時間も。会期中にテーマ読書会とサステナビリティ・ボードゲームワークショップを予定しています。','programs.readingTitle':'テーマ読書会','programs.readingBody':'展示図書を出発点に、気候、暮らし、そして私たちが選べる未来について一緒に話します。','programs.gameTitle':'サステナビリティ・ボードゲームワークショップ','programs.gameBody':'ゲームの中の資源、選択、トレードオフを通して、サステナビリティに一つの正解がない理由を体験します。','programs.dateLabel':'開催日','programs.tba':'近日公開','programs.detailsSoon':'詳細は近日公開','programs.note':'最新の日時・会場・申込方法は、国立政治大学図書館のお知らせをご確認ください。',
+  'about.when':'2026年11月2日–12月31日',
+  'footer.title':'『私たちが選ぶ未来』｜均衡を失う地球で、暮らしを学びなおす','footer.navAria':'フッターナビゲーション','footer.home':'展示トップ','footer.books':'全書籍リスト','footer.films':'映像特集','footer.programs':'関連イベント','footer.top':'トップへ ↑',
+  'mobile.sections':'テーマ','mobile.programs':'イベント',
+  'meta.description':'国立政治大学図書館のサステナビリティ・ブック＆フィルム展。気候、生態、消費、政大キャンパスを通して、私たちがともに選ぶ未来を考えます。'
+});
 
 const CHOICE_FEEDBACK_I18N={
   'zh-Hant':{
