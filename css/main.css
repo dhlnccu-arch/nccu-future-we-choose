@@ -1289,3 +1289,161 @@ body.menu-open{overflow:hidden}
 @media(hover:none){
   .hero-action:hover,.start-grid a:hover,.site-footer nav a:hover{transform:none}
 }
+
+/* v1.7.1 — unified chapter openings
+   Clear reading order: section → title/subtitle → statement → curatorial question → introduction. */
+.chapter-inner.exhibit-flow{width:min(1180px,84vw)}
+
+.chapter-heading,
+.chapter-heading.simple{
+  display:block;
+  margin:0;
+  padding-top:22px;
+  border-top:1px solid var(--line);
+}
+.chapter-heading>div{max-width:820px}
+.chapter-heading h3{
+  margin:0 0 7px;
+  font-family:var(--serif);
+  font-size:clamp(30px,3.4vw,48px);
+  font-weight:500;
+  line-height:1.22;
+  text-wrap:balance;
+}
+.chapter-heading span{
+  display:block;
+  max-width:760px;
+  color:#a9bcc4;
+  font-size:clamp(14px,1.18vw,18px);
+  line-height:1.65;
+}
+
+.chapter h2.exhibit-statement,
+.consume h2.exhibit-statement,
+.future h2.exhibit-statement,
+.photo-copy h2.exhibit-statement{
+  max-width:1120px;
+  margin:clamp(48px,7vh,82px) 0 clamp(28px,4vh,44px);
+  font-size:clamp(48px,5.5vw,82px);
+  line-height:1.14;
+  letter-spacing:-.015em;
+  text-wrap:balance;
+}
+
+.chapter-question{
+  --chapter-accent:#9ec5cc;
+  width:min(470px,42%);
+  margin:0 0 0 auto;
+  padding:5px 0 6px 24px;
+  border:0;
+  border-left:2px solid var(--chapter-accent);
+  color:#d7e3e5;
+}
+.chapter-question p{
+  margin:0;
+  font-family:var(--serif);
+  font-size:clamp(19px,1.7vw,26px);
+  font-weight:500;
+  line-height:1.58;
+  text-align:left;
+  text-wrap:balance;
+}
+.chapter-earth .chapter-question{--chapter-accent:#91bdc8}
+.chapter-climate .chapter-question{--chapter-accent:#a9cbd1}
+.chapter-residents .chapter-question{--chapter-accent:#b4d3ca;color:#e0ece8}
+.consume .chapter-question{--chapter-accent:#d2a472;color:#e7ddd3}
+.future .chapter-question{--chapter-accent:#d0e3e5;color:#f5f8f7}
+
+.exhibit-lead{
+  max-width:820px;
+  margin:clamp(42px,7vh,72px) 0 0;
+  line-height:1.85;
+}
+.exhibit-body{
+  max-width:1040px;
+  gap:4vw;
+  margin-top:clamp(42px,7vh,72px);
+}
+.exhibit-body p{line-height:1.85}
+
+.chapter-earth .age{margin-top:clamp(42px,7vh,72px)}
+.chapter-earth .statement{margin:clamp(34px,5vh,54px) 0 0}
+.chapter-earth h2.exhibit-statement{margin-top:clamp(38px,6vh,68px)}
+
+/* Section 03 keeps the photographic opening but uses the same hierarchy. */
+.photo-copy{max-width:1040px}
+.photo-copy .residents-kicker{margin:0 0 30px;color:rgba(255,255,255,.78)}
+.chapter-heading-on-photo{
+  max-width:820px;
+  border-top-color:rgba(255,255,255,.38);
+}
+.chapter-heading-on-photo h3{color:#f3f2ea}
+.chapter-heading-on-photo span{color:rgba(238,245,242,.82)}
+.photo-copy h2.exhibit-statement{
+  margin-top:clamp(38px,6vh,66px);
+  margin-bottom:0;
+  color:#f5f2e9;
+}
+.residents-text{padding-top:clamp(70px,10vh,118px)}
+.residents-text .chapter-question{margin-top:0}
+.residents-context{
+  max-width:820px;
+  margin:clamp(36px,5vh,54px) 0 0;
+  padding-top:24px;
+  border-top:1px solid rgba(255,255,255,.2);
+  color:#cfe0dc;
+}
+.residents-context p{
+  margin:0 0 8px;
+  font-family:var(--serif);
+  font-size:clamp(17px,1.35vw,21px);
+  line-height:1.72;
+}
+
+/* Preserve each chapter's own palette after removing the old side-by-side heading. */
+.consume .chapter-heading span{color:#cbbbad}
+.future .chapter-heading span{color:#edf3f2}
+.future .chapter-heading{border-top-color:rgba(255,255,255,.28)}
+
+body[data-lang="en"] .chapter h2.exhibit-statement,
+body[data-lang="en"] .consume h2.exhibit-statement,
+body[data-lang="en"] .future h2.exhibit-statement,
+body[data-lang="en"] .photo-copy h2.exhibit-statement{
+  font-size:clamp(42px,4.8vw,72px);
+  line-height:1.12;
+  letter-spacing:-.025em;
+}
+
+@media(max-width:900px){
+  .chapter-heading,.chapter-heading.simple{padding-top:18px}
+  .chapter-heading h3{font-size:clamp(28px,8vw,40px)}
+  .chapter-heading span{font-size:15px;line-height:1.6}
+  .chapter h2.exhibit-statement,
+  .consume h2.exhibit-statement,
+  .future h2.exhibit-statement,
+  .photo-copy h2.exhibit-statement{
+    margin:42px 0 26px;
+    font-size:clamp(39px,10.5vw,56px);
+    line-height:1.16;
+  }
+  .chapter-question{
+    width:100%;
+    max-width:680px;
+    margin-left:0;
+    padding-left:18px;
+  }
+  .chapter-question p{font-size:clamp(19px,5.5vw,25px)}
+  .exhibit-lead,.exhibit-body{max-width:none;margin-top:38px}
+  .chapter-earth .age{margin-top:42px}
+  .chapter-earth .statement{margin-top:30px}
+  .residents-text{padding-top:58px}
+  .residents-context{margin-top:34px}
+  .photo-copy .residents-kicker{margin-bottom:22px}
+  .chapter-heading-on-photo{max-width:100%}
+  body[data-lang="en"] .chapter h2.exhibit-statement,
+  body[data-lang="en"] .consume h2.exhibit-statement,
+  body[data-lang="en"] .future h2.exhibit-statement,
+  body[data-lang="en"] .photo-copy h2.exhibit-statement{
+    font-size:clamp(36px,9.4vw,52px);
+  }
+}
