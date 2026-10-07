@@ -14,7 +14,21 @@ const FILM_WORKS=[
     "pairings": "《我們可以選擇的未來》；《脆弱的一瞬》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991001142279705721",
     "catalogQr": "assets/qr/films/film-1-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "A｜Featured",
+        "curatorialPosition": "Looking back from the future / climate warning",
+        "location": "Dah Hsian Seetoo Library · 4MF Audiovisual Collection (available for loan)",
+        "reason": "By looking back at the present from a future devastated by climate change, the film asks why society failed to act despite knowing the risks. It closely echoes the exhibition’s central question: what future will we choose?"
+      },
+      "ja": {
+        "level": "A｜注目作品",
+        "curatorialPosition": "未来からの回顧／気候危機への警鐘",
+        "location": "達賢図書館 4MF 視聴覚資料エリア（貸出可）",
+        "reason": "気候変動で荒廃した未来から現在を振り返る構成を通して、「危険を知っていたのに、なぜ行動しなかったのか」を問いかける。本展の中心テーマ「私たちが選ぶ未来」と強く響き合う作品。"
+      }
+    }
   },
   {
     "id": "2",
@@ -31,7 +45,21 @@ const FILM_WORKS=[
     "pairings": "《地球之路》；《拯救地球：事實與真相》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991017450899705721",
     "catalogQr": "assets/qr/films/film-2-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "B｜Extended",
+        "curatorialPosition": "Overview of environmental crises / turning point for action",
+        "location": "Dah Hsian Seetoo Library · 4F Audiovisual Collection (public-performance edition; in-library use only)",
+        "reason": "Bringing together climate, energy, and ecological crises, this film offers a broad introduction to how global environmental problems are interconnected."
+      },
+      "ja": {
+        "level": "B｜関連作品",
+        "curatorialPosition": "環境危機の全体像／行動への転機",
+        "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
+        "reason": "気候・エネルギー・生態系など複数の危機を横断し、地球規模の環境問題が互いにどうつながっているかを理解するための導入となる作品。"
+      }
+    }
   },
   {
     "id": "3",
@@ -48,7 +76,21 @@ const FILM_WORKS=[
     "pairings": "《氣候賭局》；《脆弱的一瞬》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/1fo7ms3/alma991000724139705721",
     "catalogQr": "assets/qr/films/film-3-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "A｜Classic",
+        "curatorialPosition": "Climate advocacy classic / public communication",
+        "location": "Dah Hsian Seetoo Library · 4MF Audiovisual Collection (available for loan)",
+        "reason": "A landmark work in bringing climate change into public debate. Paired with more recent science and policy works, it also shows how climate communication has evolved."
+      },
+      "ja": {
+        "level": "A｜定番",
+        "curatorialPosition": "気候アドボカシーの古典／公共コミュニケーション",
+        "location": "達賢図書館 4MF 視聴覚資料エリア（貸出可）",
+        "reason": "気候変動を広く公共の議論へ押し上げた重要作。より新しい気候科学や政策の資料とあわせて見ることで、気候コミュニケーションの変化も読み取れる。"
+      }
+    }
   },
   {
     "id": "4",
@@ -65,7 +107,21 @@ const FILM_WORKS=[
     "pairings": "《我們可以選擇的未來》；《如何避免氣候災難》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991021113899805721",
     "catalogQr": "assets/qr/films/film-4-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "B｜Extended",
+        "curatorialPosition": "Climate policy / advocacy and action",
+        "location": "Dah Hsian Seetoo Library · 4F Audiovisual Collection (public-performance edition; in-library use only)",
+        "reason": "Continuing the climate advocacy perspective, it moves further into policy, energy, and international action, making it a useful companion to solution-oriented books."
+      },
+      "ja": {
+        "level": "B｜関連作品",
+        "curatorialPosition": "気候政策／行動への提言",
+        "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
+        "reason": "気候アドボカシーの視点を引き継ぎながら、政策・エネルギー・国際的な行動へと議論を広げる。解決策を扱う書籍との組み合わせにも適している。"
+      }
+    }
   },
   {
     "id": "5",
@@ -82,7 +138,21 @@ const FILM_WORKS=[
     "pairings": "《在冰川消失之前》；《尋找北極森林線》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991017450949705721",
     "catalogQr": "assets/qr/films/film-5-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "B｜Extended",
+        "curatorialPosition": "Ecological disruption / polar climate",
+        "location": "Dah Hsian Seetoo Library · 4F Audiovisual Collection (public-performance edition; in-library use only)",
+        "reason": "Focusing visually on polar ice, wildlife, and climate change, it turns glacier loss and habitat change from abstract data into landscapes viewers can feel and see."
+      },
+      "ja": {
+        "level": "B｜関連作品",
+        "curatorialPosition": "生態系の攪乱／極地の気候",
+        "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
+        "reason": "極地の氷雪、野生動物、気候変化を印象的な映像で捉え、氷河融解や生息地の変化を抽象的なデータではなく、目で感じられる風景として示す。"
+      }
+    }
   },
   {
     "id": "6",
@@ -99,7 +169,21 @@ const FILM_WORKS=[
     "pairings": "《氣候緊急時代來了》；《地球之路》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991003364229705721",
     "catalogQr": "assets/qr/films/film-6-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "B｜Extended",
+        "curatorialPosition": "Extreme rainfall / disaster risk",
+        "location": "Dah Hsian Seetoo Library · 4F Audiovisual Collection (public-performance edition; in-library use only)",
+        "reason": "Through floods and abnormal weather, the film shows how extreme events directly affect daily life and cities, turning abstract climate risk into concrete experience."
+      },
+      "ja": {
+        "level": "B｜関連作品",
+        "curatorialPosition": "極端降雨／災害リスク",
+        "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
+        "reason": "洪水や異常気象を通して、極端現象が暮らしや都市へ直接及ぼす影響を描き、抽象的な気候リスクを具体的な経験へと変える。"
+      }
+    }
   },
   {
     "id": "7",
@@ -116,7 +200,21 @@ const FILM_WORKS=[
     "pairings": "《沙郡年紀》；《在大滅絕來臨前》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991001733879705721",
     "catalogQr": "assets/qr/films/film-7-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "B｜Extended",
+        "curatorialPosition": "Taiwan’s natural environment / ecological perspective",
+        "location": "Dah Hsian Seetoo Library · 4F Audiovisual Collection (public-performance edition; in-library use only)",
+        "reason": "Centered on Taiwan’s natural environment, it strengthens the exhibition’s local ecological perspective and pairs well with works on land ethics and biodiversity."
+      },
+      "ja": {
+        "level": "B｜関連作品",
+        "curatorialPosition": "台湾の自然環境／生態を見る視点",
+        "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
+        "reason": "台湾の自然環境を見つめる作品として、本展のローカルな生態視点を補強する。土地倫理や生物多様性を扱う書籍との併読にも適している。"
+      }
+    }
   },
   {
     "id": "8",
@@ -133,7 +231,21 @@ const FILM_WORKS=[
     "pairings": "《水的價值》；《在大滅絕來臨前》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991021446623305721",
     "catalogQr": "assets/qr/films/film-8-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "B｜Special Selection",
+        "curatorialPosition": "Marine resources / science and international governance",
+        "location": "Dah Hsian Seetoo Library · 4F Audiovisual Collection (public-performance edition; in-library use only)",
+        "reason": "Starting from maritime boundaries and competition over ocean resources, the film examines the intersection of science, international law, national interests, and natural-resource governance—a strong fit for NCCU’s social-science perspective."
+      },
+      "ja": {
+        "level": "B｜特色作品",
+        "curatorialPosition": "海洋資源／科学と国際ガバナンス",
+        "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
+        "reason": "海洋境界と資源獲得競争を入り口に、科学・国際法・国家利益・自然資源ガバナンスが交差する構造を描く。政大らしい社会科学的視点を持つ作品。"
+      }
+    }
   },
   {
     "id": "9",
@@ -150,7 +262,21 @@ const FILM_WORKS=[
     "pairings": "《成長的極限》；《甜甜圈經濟學》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991004511489705721",
     "catalogQr": "assets/qr/films/film-9-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "A｜Featured",
+        "curatorialPosition": "Food systems / globalization and distribution",
+        "location": "Dah Hsian Seetoo Library · 4F Audiovisual Collection (public-performance edition; in-library use only)",
+        "reason": "By confronting the contradiction between global food production and persistent hunger, it questions overproduction, corporate power, and resource distribution, making it one of Zone 4’s strongest structural critiques."
+      },
+      "ja": {
+        "level": "A｜注目作品",
+        "curatorialPosition": "食料システム／グローバル化と分配",
+        "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
+        "reason": "世界的な食料生産と飢餓が併存する矛盾から、過剰生産、企業権力、資源配分を問い直す。第4章の中でも構造的な視点が際立つ作品。"
+      }
+    }
   },
   {
     "id": "10",
@@ -167,7 +293,21 @@ const FILM_WORKS=[
     "pairings": "《垃圾之書》；《從搖籃到搖籃》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991003357369705721",
     "catalogQr": "assets/qr/films/film-10-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "A｜Featured",
+        "curatorialPosition": "Waste society / consumption and disposal",
+        "location": "Dah Hsian Seetoo Library · 4F Audiovisual Collection (public-performance edition; in-library use only)",
+        "reason": "The film makes visible where things go after we throw them away, showing that disposal is not an endpoint and directly connecting to circular-economy and waste issues."
+      },
+      "ja": {
+        "level": "A｜注目作品",
+        "curatorialPosition": "ごみ社会／消費と廃棄",
+        "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
+        "reason": "消費のあとに廃棄物がどこへ行くのかを可視化し、「捨てること」が終点ではないと示す。循環経済や廃棄物の問題と直接つながる。"
+      }
+    }
   },
   {
     "id": "11",
@@ -184,7 +324,21 @@ const FILM_WORKS=[
     "pairings": "《甜甜圈經濟學》；《從搖籃到搖籃》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991003499989705721",
     "catalogQr": "assets/qr/films/film-11-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "B｜Extended",
+        "curatorialPosition": "Sustainable agriculture / food choices",
+        "location": "Dah Hsian Seetoo Library · 4MF Audiovisual Collection (available for loan)",
+        "reason": "Looking back from the dining table to agriculture, production, and environmental costs, it links individual food choices with the larger food system."
+      },
+      "ja": {
+        "level": "B｜関連作品",
+        "curatorialPosition": "持続可能な農業／食の選択",
+        "location": "達賢図書館 4MF 視聴覚資料エリア（貸出可）",
+        "reason": "食卓から農業、生産、環境コストをさかのぼって見つめ、個人の食の選択とより大きな食料システムをつなぐ作品。"
+      }
+    }
   },
   {
     "id": "12",
@@ -201,7 +355,21 @@ const FILM_WORKS=[
     "pairings": "《甜甜圈經濟學》；《成長的極限》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991001142199705721",
     "catalogQr": "assets/qr/films/film-12-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "A｜Featured",
+        "curatorialPosition": "Fair trade / global supply chains",
+        "location": "Dah Hsian Seetoo Library · 4MF Audiovisual Collection (available for loan)",
+        "reason": "By tracing the gap between coffee-growing communities and international market prices, it reveals issues of consumption, the Global South, and fair trade, strengthening the exhibition’s social-sustainability dimension."
+      },
+      "ja": {
+        "level": "A｜注目作品",
+        "curatorialPosition": "フェアトレード／グローバル・サプライチェーン",
+        "location": "達賢図書館 4MF 視聴覚資料エリア（貸出可）",
+        "reason": "コーヒー生産地と国際市場価格の格差を通して、消費、グローバル・サウス、フェアトレードの問題を描き、本展の社会的持続可能性の視点を補う。"
+      }
+    }
   },
   {
     "id": "13",
@@ -218,7 +386,21 @@ const FILM_WORKS=[
     "pairings": "《能源大騙局》；《世界又熱、又平、又擠》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991013933879705721",
     "catalogQr": "assets/qr/films/film-13-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "B｜Extended",
+        "curatorialPosition": "Fossil fuels / environmental disaster",
+        "location": "Dah Hsian Seetoo Library · 4MF Audiovisual Collection (available for loan)",
+        "reason": "Through the disasters and community impacts caused by energy extraction, the film makes the external costs of fossil fuels visible and supports discussion of energy transition."
+      },
+      "ja": {
+        "level": "B｜関連作品",
+        "curatorialPosition": "化石燃料／環境災害",
+        "location": "達賢図書館 4MF 視聴覚資料エリア（貸出可）",
+        "reason": "エネルギー採掘が引き起こす災害と地域社会への影響を通して、化石燃料の外部コストを可視化し、エネルギー転換を考える文脈を補強する。"
+      }
+    }
   },
   {
     "id": "14",
@@ -235,7 +417,21 @@ const FILM_WORKS=[
     "pairings": "《氣候賭局》；《減碳社會學》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991002225339705721",
     "catalogQr": "assets/qr/films/film-14-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "A｜Featured",
+        "curatorialPosition": "Carbon markets / institutions and equity",
+        "location": "Dah Hsian Seetoo Library · 4F Audiovisual Collection (public-performance edition; in-library use only)",
+        "reason": "Starting from carbon trading and offset schemes, the film asks whether market mechanisms truly reduce emissions and how costs and benefits are distributed, offering strong policy and economic perspectives."
+      },
+      "ja": {
+        "level": "A｜注目作品",
+        "curatorialPosition": "炭素市場／制度と公正",
+        "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
+        "reason": "排出量取引やカーボン・オフセットから、市場メカニズムが本当に排出削減につながるのか、コストと利益がどう配分されるのかを問う。政策・経済の観点から考える価値が高い。"
+      }
+    }
   },
   {
     "id": "15",
@@ -252,7 +448,21 @@ const FILM_WORKS=[
     "pairings": "《我們可以選擇的未來》；《甜甜圈經濟學》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991021260686605721",
     "catalogQr": "assets/qr/films/film-15-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "A｜Featured",
+        "curatorialPosition": "Imagining solutions / a future we can choose",
+        "location": "Dah Hsian Seetoo Library · 4F Audiovisual Collection (public-performance edition; in-library use only)",
+        "reason": "Using technologies, institutions, and lifestyle solutions that already exist, the film imagines a possible 2040. Its constructive tone closely matches the exhibition’s idea that the future is still open to choice."
+      },
+      "ja": {
+        "level": "A｜注目作品",
+        "curatorialPosition": "解決策の想像／選べる未来",
+        "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
+        "reason": "すでに存在する技術、制度、暮らしの解決策をもとに2040年の可能な未来を描く。前向きな基調は、「未来はまだ選べる」という本展のメッセージとよく重なる。"
+      }
+    }
   },
   {
     "id": "16",
@@ -269,7 +479,21 @@ const FILM_WORKS=[
     "pairings": "《水的價值》；《終結空氣汙染》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991008369749705721",
     "catalogQr": "assets/qr/films/film-16-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "A｜Featured",
+        "curatorialPosition": "Pollution / corporate responsibility and civic action",
+        "location": "Dah Hsian Seetoo Library · 4F Audiovisual Collection (public-performance edition; in-library use only)",
+        "reason": "Based on a true story, this drama turns water pollution, public health, corporate responsibility, and legal remedy into an engaging narrative, making it an important fiction feature in the display."
+      },
+      "ja": {
+        "level": "A｜注目作品",
+        "curatorialPosition": "汚染問題／企業責任と市民行動",
+        "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
+        "reason": "実話をもとにしたドラマを通して、水質汚染、公衆衛生、企業責任、法的救済を身近な物語へと変える。展示の中で重要な劇映画作品。"
+      }
+    }
   },
   {
     "id": "17",
@@ -286,7 +510,21 @@ const FILM_WORKS=[
     "pairings": "《減碳社會學》；《永續發展的路口》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991021674847405721",
     "catalogQr": "assets/qr/films/film-17-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "A｜Featured",
+        "curatorialPosition": "Global climate governance / international negotiations",
+        "location": "Dah Hsian Seetoo Library · 4F Audiovisual Collection (public-performance edition; in-library use only)",
+        "reason": "Taking viewers inside global climate negotiations, the film reveals tensions among national interests, economic development, and collective governance, lifting sustainability to the level of institutions and international politics."
+      },
+      "ja": {
+        "level": "A｜注目作品",
+        "curatorialPosition": "グローバル気候ガバナンス／国際交渉",
+        "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
+        "reason": "国際的な気候交渉の現場に入り、国家利益、経済発展、共同ガバナンスのせめぎ合いを描く。持続可能性を制度と国際政治の次元から考えられる作品。"
+      }
+    }
   },
   {
     "id": "18",
@@ -303,6 +541,20 @@ const FILM_WORKS=[
     "pairings": "《水的價值》；《島都之河》",
     "catalogUrl": "https://nccu.primo.exlibrisgroup.com/permalink/886NCCU_INST/18n1a3l/alma991001142339705721",
     "catalogQr": "assets/qr/films/film-18-catalog.svg",
-    "notes": ""
+    "notes": "",
+    "i18n": {
+      "en": {
+        "level": "A｜Featured",
+        "curatorialPosition": "Water resources / public goods and privatization",
+        "location": "Dah Hsian Seetoo Library · 4MF Audiovisual Collection (available for loan)",
+        "reason": "Starting from water scarcity and commodification, the film examines public rights, corporations, and governance, creating a strong thread with the exhibition’s water and urban themes."
+      },
+      "ja": {
+        "level": "A｜注目作品",
+        "curatorialPosition": "水資源／公共財と民営化",
+        "location": "達賢図書館 4MF 視聴覚資料エリア（貸出可）",
+        "reason": "水不足と商品化を入り口に、公共の権利、企業、ガバナンスを考える。本展で広げた水と都市のテーマともつながる作品。"
+      }
+    }
   }
 ];
