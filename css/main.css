@@ -112,6 +112,15 @@ body[data-lang="ja"]{--serif:"Noto Serif JP","Yu Mincho","Hiragino Mincho ProN",
   .header-actions>.language-switcher{gap:9px}.header-actions>.language-switcher .lang-btn[data-lang="zh-Hant"]{font-size:0}.header-actions>.language-switcher .lang-btn[data-lang="zh-Hant"]::before{content:'中';font-size:11px}.header-actions>.language-switcher .lang-btn[data-lang="ja"]{font-size:0}.header-actions>.language-switcher .lang-btn[data-lang="ja"]::before{content:'日';font-size:11px}.hero-copy{margin-top:43vh}.chapter h2,.dahhsian h2,.consume h2,.future h2,.choice h2{font-size:clamp(39px,11vw,56px)}.cycle-words{font-size:clamp(46px,15vw,70px)}
 }
 
+/* v1.7.6 — 讓手機版的第二句開場標語改回靠左、上下正常排列，不再靠右擠壓 */
+@media (max-width: 900px) {
+  .opening-line:nth-child(2) {
+    margin-left: 0 !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+  }
+}
+
 @media(min-width:1600px){
   .site-header{padding-top:34px}.hero-copy{margin-left:7.5vw}.chapter-inner{width:min(1460px,84vw)}.menu-button,.lang-btn{font-size:12px}
 }
