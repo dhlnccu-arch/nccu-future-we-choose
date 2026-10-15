@@ -1551,3 +1551,23 @@ body[data-lang="en"] .photo-copy h2.exhibit-statement{
     overflow-wrap: break-word;
   }
 }
+/* v1.7.7 — 修正手機版開場標語文字過大與溢出破圖問題 */
+@media (max-width: 900px) {
+  .opening-line {
+    min-height: auto !important;
+    display: block !important;
+    padding: 6vh 0 !important;
+    font-size: clamp(30px, 7.8vw, 44px) !important;
+    line-height: 1.4 !important;
+    max-width: 100% !important;
+  }
+  .opening-line:nth-child(2) {
+    margin-left: 0 !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+  }
+}
+  /* v1.7.8 — 增加「留下我的選擇」按鈕與上方文字的間距 */
+  .feedback-cta {
+    margin-top: 26px !important;
+  }
