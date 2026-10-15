@@ -1475,7 +1475,7 @@ body[data-lang="en"] .photo-copy h2.exhibit-statement{
   }
 }
 
-/* v1.7.3 — Fix #collection anchor jump position and full-screen alignment */
+/* v1.7.4 — 放大首頁字體 & 修正完整書影單區塊滿版高度 */
 .chapter-climate,
 .chapter-residents,
 .dahhsian,
@@ -1484,14 +1484,30 @@ body[data-lang="en"] .photo-copy h2.exhibit-statement{
 .choice,
 .collection,
 .ending {
-  content-visibility: visible;
-  contain-intrinsic-size: none;
+  content-visibility: visible !important;
+  contain-intrinsic-size: none !important;
 }
 
 #collection {
-  scroll-margin-top: 0;
+  scroll-margin-top: 0 !important;
   min-height: 100svh;
   display: flex;
   align-items: center;
   padding: 12vh 0;
+}
+
+/* 電腦版首頁（Hero 區與導覽列）字體放大設定 */
+@media (min-width: 901px) {
+  .brand { font-size: 13px; }
+  .brand-library { font-size: 12px; }
+  .lang-btn, .menu-button { font-size: 14px; }
+
+  .hero-copy { width: min(1080px, 84vw); }
+  .hero-kicker { font-size: 15px; margin-bottom: 20px; }
+  .hero h1 { font-size: clamp(72px, 6.2vw, 118px); }
+  .hero-subtitle { font-size: clamp(22px, 1.8vw, 30px); margin-top: 28px; }
+  .hero-intro { font-size: clamp(18px, 1.45vw, 23px); max-width: 760px; line-height: 1.8; }
+  .hero-visit { font-size: 15px; max-width: 980px; gap: 12px 30px; }
+  .hero-action { font-size: 15px; padding: 12px 20px; min-height: 48px; }
+  .scroll-cue { font-size: 13px; }
 }
