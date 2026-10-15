@@ -108,7 +108,7 @@
       note.textContent = label;
       el.append(note);
     }
-    if (title !== original) {
+    if (CURRENT_LANG !== 'ja' && title !== original) {
       const source = document.createElement('span');
       source.className = 'book-title-original-inline';
       source.lang = 'zh-Hant';

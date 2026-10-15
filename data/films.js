@@ -24,6 +24,7 @@ const FILM_WORKS=[
         "reason": "By looking back at the present from a future devastated by climate change, the film asks why society failed to act despite knowing the risks. It closely echoes the exhibition’s central question: what future will we choose?"
       },
       "ja": {
+        "title": "愚か者の時代にいる",
         "level": "A｜注目作品",
         "curatorialPosition": "未来からの回顧／気候危機への警鐘",
         "location": "達賢図書館 4MF 視聴覚資料エリア（貸出可）",
@@ -56,6 +57,7 @@ const FILM_WORKS=[
         "reason": "Bringing together climate, energy, and ecological crises, this film offers a broad introduction to how global environmental problems are interconnected."
       },
       "ja": {
+        "title": "第11時：地球環境危機の瀬戸際",
         "level": "B｜関連作品",
         "curatorialPosition": "環境危機の全体像／行動への転機",
         "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
@@ -88,6 +90,7 @@ const FILM_WORKS=[
         "reason": "A landmark work in bringing climate change into public debate. Paired with more recent science and policy works, it also shows how climate communication has evolved."
       },
       "ja": {
+        "title": "不都合な真実",
         "level": "A｜定番",
         "curatorialPosition": "気候アドボカシーの古典／公共コミュニケーション",
         "location": "達賢図書館 4MF 視聴覚資料エリア（貸出可）",
@@ -120,6 +123,7 @@ const FILM_WORKS=[
         "reason": "Continuing the climate advocacy perspective, it moves further into policy, energy, and international action, making it a useful companion to solution-oriented books."
       },
       "ja": {
+        "title": "不都合な真実2：放置された地球",
         "level": "B｜関連作品",
         "curatorialPosition": "気候政策／行動への提言",
         "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
@@ -152,6 +156,7 @@ const FILM_WORKS=[
         "reason": "Focusing visually on polar ice, wildlife, and climate change, it turns glacier loss and habitat change from abstract data into landscapes viewers can feel and see."
       },
       "ja": {
+        "title": "ホワイト・プラネット",
         "level": "B｜関連作品",
         "curatorialPosition": "生態系の攪乱／極地の気候",
         "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
@@ -184,6 +189,7 @@ const FILM_WORKS=[
         "reason": "Through floods and abnormal weather, the film shows how extreme events directly affect daily life and cities, turning abstract climate risk into concrete experience."
       },
       "ja": {
+        "title": "大洪水の黙示録：異常気象の時代",
         "level": "B｜関連作品",
         "curatorialPosition": "極端降雨／災害リスク",
         "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
@@ -216,6 +222,7 @@ const FILM_WORKS=[
         "reason": "Centered on Taiwan’s natural environment, it strengthens the exhibition’s local ecological perspective and pairs well with works on land ethics and biodiversity."
       },
       "ja": {
+        "title": "フォルモサの指輪：大自然との対話",
         "level": "B｜関連作品",
         "curatorialPosition": "台湾の自然環境／生態を見る視点",
         "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
@@ -248,6 +255,7 @@ const FILM_WORKS=[
         "reason": "Starting from maritime boundaries and competition over ocean resources, the film examines the intersection of science, international law, national interests, and natural-resource governance—a strong fit for NCCU’s social-science perspective."
       },
       "ja": {
+        "title": "海洋の独占：海洋領土争奪戦",
         "level": "B｜特色作品",
         "curatorialPosition": "海洋資源／科学と国際ガバナンス",
         "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
@@ -280,6 +288,7 @@ const FILM_WORKS=[
         "reason": "By confronting the contradiction between global food production and persistent hunger, it questions overproduction, corporate power, and resource distribution, making it one of Zone 4’s strongest structural critiques."
       },
       "ja": {
+        "title": "ありあまるごちそう",
         "level": "A｜注目作品",
         "curatorialPosition": "食料システム／グローバル化と分配",
         "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
@@ -312,6 +321,7 @@ const FILM_WORKS=[
         "reason": "The film makes visible where things go after we throw them away, showing that disposal is not an endpoint and directly connecting to circular-economy and waste issues."
       },
       "ja": {
+        "title": "人間・ごみ・自然と未来",
         "level": "A｜注目作品",
         "curatorialPosition": "ごみ社会／消費と廃棄",
         "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
@@ -344,6 +354,7 @@ const FILM_WORKS=[
         "reason": "Looking back from the dining table to agriculture, production, and environmental costs, it links individual food choices with the larger food system."
       },
       "ja": {
+        "title": "サステナブルな食卓：あなたの皿の上にあるもの",
         "level": "B｜関連作品",
         "curatorialPosition": "持続可能な農業／食の選択",
         "location": "達賢図書館 4MF 視聴覚資料エリア（貸出可）",
@@ -376,6 +387,7 @@ const FILM_WORKS=[
         "reason": "By tracing the gap between coffee-growing communities and international market prices, it reveals issues of consumption, the Global South, and fair trade, strengthening the exhibition’s social-sustainability dimension."
       },
       "ja": {
+        "title": "おいしいコーヒーの真実",
         "level": "A｜注目作品",
         "curatorialPosition": "フェアトレード／グローバル・サプライチェーン",
         "location": "達賢図書館 4MF 視聴覚資料エリア（貸出可）",
@@ -408,6 +420,7 @@ const FILM_WORKS=[
         "reason": "Through the disasters and community impacts caused by energy extraction, the film makes the external costs of fossil fuels visible and supports discussion of energy transition."
       },
       "ja": {
+        "title": "黒い湾：エネルギーの惨禍",
         "level": "B｜関連作品",
         "curatorialPosition": "化石燃料／環境災害",
         "location": "達賢図書館 4MF 視聴覚資料エリア（貸出可）",
@@ -440,6 +453,7 @@ const FILM_WORKS=[
         "reason": "Starting from carbon trading and offset schemes, the film asks whether market mechanisms truly reduce emissions and how costs and benefits are distributed, offering strong policy and economic perspectives."
       },
       "ja": {
+        "title": "カーボン・ラッシュ：排出量取引制度の真実",
         "level": "A｜注目作品",
         "curatorialPosition": "炭素市場／制度と公正",
         "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
@@ -472,6 +486,7 @@ const FILM_WORKS=[
         "reason": "Using technologies, institutions, and lifestyle solutions that already exist, the film imagines a possible 2040. Its constructive tone closely matches the exhibition’s idea that the future is still open to choice."
       },
       "ja": {
+        "title": "2040 地球再生のビジョン",
         "level": "A｜注目作品",
         "curatorialPosition": "解決策の想像／選べる未来",
         "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
@@ -504,6 +519,7 @@ const FILM_WORKS=[
         "reason": "Based on a true story, this drama turns water pollution, public health, corporate responsibility, and legal remedy into an engaging narrative, making it an important fiction feature in the display."
       },
       "ja": {
+        "title": "エリン・ブロコビッチ",
         "level": "A｜注目作品",
         "curatorialPosition": "汚染問題／企業責任と市民行動",
         "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
@@ -536,6 +552,7 @@ const FILM_WORKS=[
         "reason": "Taking viewers inside global climate negotiations, the film reveals tensions among national interests, economic development, and collective governance, lifting sustainability to the level of institutions and international politics."
       },
       "ja": {
+        "title": "地球の守護者たち：地球を救うと決めた瞬間",
         "level": "A｜注目作品",
         "curatorialPosition": "グローバル気候ガバナンス／国際交渉",
         "location": "達賢図書館 4F 視聴覚資料エリア（公衆上映権付版・館内利用のみ）",
@@ -568,6 +585,7 @@ const FILM_WORKS=[
         "reason": "Starting from water scarcity and commodification, the film examines public rights, corporations, and governance, creating a strong thread with the exhibition’s water and urban themes."
       },
       "ja": {
+        "title": "ブルー・ゴールド 狙われた水の真実",
         "level": "A｜注目作品",
         "curatorialPosition": "水資源／公共財と民営化",
         "location": "達賢図書館 4MF 視聴覚資料エリア（貸出可）",

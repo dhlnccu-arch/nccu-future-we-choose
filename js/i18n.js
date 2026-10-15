@@ -252,52 +252,176 @@ Object.assign(HOTSPOT_I18N.ja,{
 });
 
 const BOOK_TITLE_DISPLAY={
-  '脆弱的一瞬':{en:{title:"Our Fragile Moment: How Lessons from Earth's Past Can Help Us Survive the Climate Crisis",type:'official'},ja:{title:"Our Fragile Moment: How Lessons from Earth's Past Can Help Us Survive the Climate Crisis",type:'official'}},
-  '地球之路':{en:{title:'The Earth Transformed: An Untold History',type:'official'},ja:{title:'The Earth Transformed: An Untold History',type:'official'}},
-  '氣候賭局':{en:{title:'The Climate Casino: Risk, Uncertainty, and Economics for a Warming World',type:'official'},ja:{title:'The Climate Casino: Risk, Uncertainty, and Economics for a Warming World',type:'official'}},
-  '氣候變遷：亟待解決的人類共同問題':{en:{title:"Climate Change: Humanity's Urgent Common Challenge",type:'exhibition'},ja:{title:'気候変動：人類が直面する喫緊の共通課題',type:'exhibition'}},
-  '暖化尚無定論':{en:{title:"Unsettled: What Climate Science Tells Us, What It Doesn't, and Why It Matters",type:'official'},ja:{title:"Unsettled: What Climate Science Tells Us, What It Doesn't, and Why It Matters",type:'official'}},
-  '拯救地球':{en:{title:'How to Save Our Planet: The Facts',type:'official'},ja:{title:'How to Save Our Planet: The Facts',type:'official'}},
-  '熱浪會先殺死你':{en:{title:'The Heat Will Kill You First: Life and Death on a Scorched Planet',type:'official'},ja:{title:'The Heat Will Kill You First: Life and Death on a Scorched Planet',type:'official'}},
-  '野火':{en:{title:'Fire Weather: A True Story from a Hotter World',type:'official'},ja:{title:'Fire Weather: A True Story from a Hotter World',type:'official'}},
-  '在冰川消失之前':{en:{title:'On Time and Water',type:'official'},ja:{title:'On Time and Water',type:'official'}},
-  '尋找北極森林線':{en:{title:'The Treeline: The Last Forest and the Future of Life on Earth',type:'official'},ja:{title:'The Treeline: The Last Forest and the Future of Life on Earth',type:'official'}},
-  '氣候緊急時代來了':{en:{title:'The Uninhabitable Earth: Life After Warming',type:'official'},ja:{title:'The Uninhabitable Earth: Life After Warming',type:'official'}},
-  '臺灣小米種回來！':{en:{title:'Bringing Taiwan Millet Back!',type:'exhibition'},ja:{title:'台湾アワを取り戻す！',type:'exhibition'}},
-  '有靈・原民植物智慧':{en:{title:'Spirited Plants: Indigenous Botanical Wisdom',type:'exhibition'},ja:{title:'霊性を宿す植物・先住民族の植物の知恵',type:'exhibition'}},
-  '有靈2：與神同行的阿美族民族植物':{en:{title:'Spirited Plants II: Amis Ethnobotany Walking with the Spirits',type:'exhibition'},ja:{title:'霊性を宿す植物2：神々と歩むアミ族の民族植物',type:'exhibition'}},
-  '西納列克 Snaliq':{en:{title:'Snaliq',type:'exhibition'},ja:{title:'スナリク（Snaliq）',type:'exhibition'}},
-  '寂靜的春天':{en:{title:'Silent Spring',type:'official'},ja:{title:'Silent Spring',type:'official'}},
-  '沙郡年紀':{en:{title:'A Sand County Almanac and Other Writings',type:'official'},ja:{title:'A Sand County Almanac and Other Writings',type:'official'}},
-  '與路共生':{en:{title:'Crossings: How Road Ecology Is Shaping the Future of Our Planet',type:'official'},ja:{title:'Crossings: How Road Ecology Is Shaping the Future of Our Planet',type:'official'}},
-  '在大滅絕來臨前':{en:{title:'Under a White Sky: The Nature of the Future',type:'official'},ja:{title:'Under a White Sky: The Nature of the Future',type:'official'}},
-  '復原重生吧！里山・里地・里海':{en:{title:'Reviving Satoyama, Satoyachi, and Satoumi',type:'exhibition'},ja:{title:'よみがえれ里山・里地・里海―里山・里地の変化と保全活動',type:'official'}},
-  '狂野人生':{en:{title:"A Wild Idea: The True Story of Douglas Tompkins—The Greatest Conservationist (You've Never Heard Of)",type:'official'},ja:{title:"A Wild Idea: The True Story of Douglas Tompkins—The Greatest Conservationist (You've Never Heard Of)",type:'official'}},
-  '成長的極限':{en:{title:'Limits to Growth: The 30-Year Update',type:'official'},ja:{title:'Limits to Growth: The 30-Year Update',type:'official'}},
-  '甜甜圈經濟學':{en:{title:'Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist',type:'official'},ja:{title:'Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist',type:'official'}},
-  '從搖籃到搖籃':{en:{title:'Cradle to Cradle: Remaking the Way We Make Things',type:'official'},ja:{title:'Cradle to Cradle: Remaking the Way We Make Things',type:'official'}},
-  '循環經濟':{en:{title:'Circular Economy',type:'official'},ja:{title:'Circular Economy',type:'official'}},
-  '垃圾之書':{en:{title:'The Book of Waste',type:'exhibition'},ja:{title:'廃棄物の本',type:'exhibition'}},
-  '永續時尚':{en:{title:'The Fashion Conscious',type:'official'},ja:{title:'The Fashion Conscious',type:'official'}},
-  '別讓地球碳氣':{en:{title:'How Bad Are Bananas? The Carbon Footprint of Everything',type:'official'},ja:{title:'How Bad Are Bananas? The Carbon Footprint of Everything',type:'official'}},
-  '能源大騙局':{en:{title:'Fueling Freedom: Exposing the Mad War on Energy',type:'official'},ja:{title:'Fueling Freedom: Exposing the Mad War on Energy',type:'official'}},
-  '巫師與先知':{en:{title:"The Wizard and the Prophet: Two Remarkable Scientists and Their Dueling Visions to Shape Tomorrow's World",type:'official'},ja:{title:"The Wizard and the Prophet: Two Remarkable Scientists and Their Dueling Visions to Shape Tomorrow's World",type:'official'}},
-  '世界又熱、又平、又擠':{en:{title:'Hot, Flat, and Crowded: Why the World Needs a Green Revolution—and How We Can Renew Our Global Future',type:'official'},ja:{title:'Hot, Flat, and Crowded',type:'official'}},
-  '我們可以選擇的未來':{en:{title:"The Future We Choose: The Stubborn Optimist's Guide to the Climate Crisis",type:'official'},ja:{title:"The Future We Choose: The Stubborn Optimist's Guide to the Climate Crisis",type:'official'}},
-  '如何避免氣候災難':{en:{title:'How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need',type:'official'},ja:{title:'How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need',type:'official'}},
-  '水的價值':{en:{title:"The Worth of Water: Our Story of Chasing Solutions to the World's Greatest Challenge",type:'official'},ja:{title:"The Worth of Water: Our Story of Chasing Solutions to the World's Greatest Challenge",type:'official'}},
-  '永續發展的路口':{en:{title:'At a Crossroads of Sustainable Development',type:'exhibition'},ja:{title:'持続可能な開発の岐路',type:'exhibition'}},
-  '永續發展的終局之戰':{en:{title:'The Endgame of Sustainable Development',type:'exhibition'},ja:{title:'持続可能な開発の最終局面',type:'exhibition'}},
-  '減碳社會學':{en:{title:'Sociology of Decarbonization',type:'exhibition'},ja:{title:'脱炭素の社会学',type:'exhibition'}},
-  '企業永續典範3.0':{en:{title:'Corporate Sustainability Models 3.0',type:'exhibition'},ja:{title:'企業サステナビリティ・モデル 3.0',type:'exhibition'}},
-  '為什麼有些街道走起來特別涼？':{en:{title:'Why Do Some Streets Feel Cooler?',type:'exhibition'},ja:{title:'なぜ歩くと涼しく感じる通りがあるのか？',type:'exhibition'}},
-  '終結空氣汙染':{en:{title:'Clearing the Air: The Beginning and the End of Air Pollution',type:'official'},ja:{title:'Clearing the Air: The Beginning and the End of Air Pollution',type:'official'}},
-  '島都之河':{en:{title:"A City's River: Water History and Water Culture of the Tamsui River and Taipei City",type:'exhibition'},ja:{title:'島都の川―淡水河と台北の水の歴史と文化',type:'exhibition'}}
+  '脆弱的一瞬':{
+    en:{title:"Our Fragile Moment: How Lessons from Earth's Past Can Help Us Survive the Climate Crisis",type:'official'},
+    ja:{title:'フラジャイル・モーメント：気候危機の真実',type:'official'}
+  },
+  '地球之路':{
+    en:{title:'The Earth Transformed: An Untold History',type:'official'},
+    ja:{title:'変貌する地球：人類・気候・文明の知られざる歴史',type:'exhibition'}
+  },
+  '氣候賭局':{
+    en:{title:'The Climate Casino: Risk, Uncertainty, and Economics for a Warming World',type:'official'},
+    ja:{title:'気候カジノ：経済学から見た地球温暖化問題の最適解',type:'official'}
+  },
+  '氣候變遷：亟待解決的人類共同問題':{
+    en:{title:"Climate Change: Humanity's Urgent Common Challenge",type:'exhibition'},
+    ja:{title:'気候変動：人類が直面する喫緊の共通課題',type:'exhibition'}
+  },
+  '暖化尚無定論':{
+    en:{title:"Unsettled: What Climate Science Tells Us, What It Doesn't, and Why It Matters",type:'official'},
+    ja:{title:'気候変動の真実：科学は何を語り、何を語っていないか？',type:'official'}
+  },
+  '拯救地球':{
+    en:{title:'How to Save Our Planet: The Facts',type:'official'},
+    ja:{title:'地球を救う方法：事実と真実',type:'exhibition'}
+  },
+  '熱浪會先殺死你':{
+    en:{title:'The Heat Will Kill You First: Life and Death on a Scorched Planet',type:'official'},
+    ja:{title:'熱波が真っ先にあなたを襲う：灼熱の地球における生と死',type:'exhibition'}
+  },
+  '野火':{
+    en:{title:'Fire Weather: A True Story from a Hotter World',type:'official'},
+    ja:{title:'ファイア・ウェザー：温暖化する世界の山火事と気候災害',type:'exhibition'}
+  },
+  '在冰川消失之前':{
+    en:{title:'On Time and Water',type:'official'},
+    ja:{title:'氷河が融けゆく国・アイスランドの物語',type:'official'}
+  },
+  '尋找北極森林線':{
+    en:{title:'The Treeline: The Last Forest and the Future of Life on Earth',type:'official'},
+    ja:{title:'北極の森林限界をたどる：融けゆく氷河・永久凍土と地球最後の森',type:'exhibition'}
+  },
+  '氣候緊急時代來了':{
+    en:{title:'The Uninhabitable Earth: Life After Warming',type:'official'},
+    ja:{title:'地球に住めなくなる日：「気候崩壊」の避けられない真実',type:'official'}
+  },
+  '臺灣小米種回來！':{
+    en:{title:'Bringing Taiwan Millet Back!',type:'exhibition'},
+    ja:{title:'台湾アワを取り戻す！',type:'exhibition'}
+  },
+  '有靈・原民植物智慧':{
+    en:{title:'Spirited Plants: Indigenous Botanical Wisdom',type:'exhibition'},
+    ja:{title:'霊性を宿す植物・先住民族の植物の知恵',type:'exhibition'}
+  },
+  '有靈2：與神同行的阿美族民族植物':{
+    en:{title:'Spirited Plants II: Amis Ethnobotany Walking with the Spirits',type:'exhibition'},
+    ja:{title:'霊性を宿す植物2：神々と歩むアミ族の民族植物',type:'exhibition'}
+  },
+  '西納列克 Snaliq':{
+    en:{title:'Snaliq',type:'exhibition'},
+    ja:{title:'スナリク：タイヤル族の山林と土地の記憶',type:'exhibition'}
+  },
+  '寂靜的春天':{
+    en:{title:'Silent Spring',type:'official'},
+    ja:{title:'沈黙の春',type:'official'}
+  },
+  '沙郡年紀':{
+    en:{title:'A Sand County Almanac and Other Writings',type:'official'},
+    ja:{title:'野生のうたが聞こえる',type:'official'}
+  },
+  '與路共生':{
+    en:{title:'Crossings: How Road Ecology Is Shaping the Future of Our Planet',type:'official'},
+    ja:{title:'道と共生する：道路生態学はいかに地球の運命を変えるか',type:'exhibition'}
+  },
+  '在大滅絕來臨前':{
+    en:{title:'Under a White Sky: The Nature of the Future',type:'official'},
+    ja:{title:'世界から青空がなくなる日：自然を操作するテクノロジーと人新世の未来',type:'official'}
+  },
+  '復原重生吧！里山・里地・里海':{
+    en:{title:'Reviving Satoyama, Satoyachi, and Satoumi',type:'exhibition'},
+    ja:{title:'よみがえれ里山・里地・里海：里山・里地の変化と保全活動',type:'official'}
+  },
+  '狂野人生':{
+    en:{title:"A Wild Idea: The True Story of Douglas Tompkins—The Greatest Conservationist (You've Never Heard Of)",type:'official'},
+    ja:{title:'ワイルド・ライフ：パタゴニアの荒野を救ったノース・フェイス創業者の挑戦',type:'exhibition'}
+  },
+  '成長的極限':{
+    en:{title:'Limits to Growth: The 30-Year Update',type:'official'},
+    ja:{title:'成長の限界',type:'official'}
+  },
+  '甜甜圈經濟學':{
+    en:{title:'Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist',type:'official'},
+    ja:{title:'ドーナツ経済学が世界を救う',type:'official'}
+  },
+  '從搖籃到搖籃':{
+    en:{title:'Cradle to Cradle: Remaking the Way We Make Things',type:'official'},
+    ja:{title:'ゆりかごからゆりかごへ：持続可能性へ向けたデザイン',type:'official'}
+  },
+  '循環經濟':{
+    en:{title:'Circular Economy',type:'official'},
+    ja:{title:'サーキュラー・エコノミー：循環経済のしくみ',type:'exhibition'}
+  },
+  '垃圾之書':{
+    en:{title:'The Book of Waste',type:'exhibition'},
+    ja:{title:'廃棄物の本：ごみに埋もれる人類の現実と行動',type:'exhibition'}
+  },
+  '永續時尚':{
+    en:{title:'The Fashion Conscious',type:'official'},
+    ja:{title:'サステナブル・ファッション：自分らしいスタイルと価値をまとう',type:'exhibition'}
+  },
+  '別讓地球碳氣':{
+    en:{title:'How Bad Are Bananas? The Carbon Footprint of Everything',type:'official'},
+    ja:{title:'カーボンフットプリント：バナナ1本から学ぶ脱炭素生活',type:'official'}
+  },
+  '能源大騙局':{
+    en:{title:'Fueling Freedom: Exposing the Mad War on Energy',type:'official'},
+    ja:{title:'エネルギーの大欺瞞：グリーンエネルギー神話が招く世紀の賭け',type:'exhibition'}
+  },
+  '巫師與先知':{
+    en:{title:"The Wizard and the Prophet: Two Remarkable Scientists and Their Dueling Visions to Shape Tomorrow's World",type:'official'},
+    ja:{title:'魔術師と予言者：2050年の世界像をめぐる科学者たちの闘い',type:'official'}
+  },
+  '世界又熱、又平、又擠':{
+    en:{title:'Hot, Flat, and Crowded: Why the World Needs a Green Revolution—and How We Can Renew Our Global Future',type:'official'},
+    ja:{title:'グリーン革命：温暖化、フラット化、人口過密化する世界',type:'official'}
+  },
+  '我們可以選擇的未來':{
+    en:{title:"The Future We Choose: The Stubborn Optimist's Guide to the Climate Crisis",type:'official'},
+    ja:{title:'私たちが選ぶ未来：気候危機を生き抜くためのガイド',type:'exhibition'}
+  },
+  '如何避免氣候災難':{
+    en:{title:'How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need',type:'official'},
+    ja:{title:'地球の未来のため僕が決断したこと：気候大災害は防げる',type:'official'}
+  },
+  '水的價值':{
+    en:{title:"The Worth of Water: Our Story of Chasing Solutions to the World's Greatest Challenge",type:'official'},
+    ja:{title:'水の価値：世界で最も困難な水資源の課題に挑む',type:'exhibition'}
+  },
+  '永續發展的路口':{
+    en:{title:'At a Crossroads of Sustainable Development',type:'exhibition'},
+    ja:{title:'持続可能な開発の岐路',type:'exhibition'}
+  },
+  '永續發展的終局之戰':{
+    en:{title:'The Endgame of Sustainable Development',type:'exhibition'},
+    ja:{title:'持続可能な開発の最終局面：気候変動問題の理論と実務',type:'exhibition'}
+  },
+  '減碳社會學':{
+    en:{title:'Sociology of Decarbonization',type:'exhibition'},
+    ja:{title:'脱炭素の社会学：台湾のネットゼロ移行における世論と課題',type:'exhibition'}
+  },
+  '企業永續典範3.0':{
+    en:{title:'Corporate Sustainability Models 3.0',type:'exhibition'},
+    ja:{title:'企業サステナビリティ・モデル 3.0',type:'exhibition'}
+  },
+  '為什麼有些街道走起來特別涼？':{
+    en:{title:'Why Do Some Streets Feel Cooler?',type:'exhibition'},
+    ja:{title:'なぜ歩くと涼しく感じる通りがあるのか？',type:'exhibition'}
+  },
+  '終結空氣汙染':{
+    en:{title:'Clearing the Air: The Beginning and the End of Air Pollution',type:'official'},
+    ja:{title:'大気汚染を終わらせる：世界の闘いから学ぶ空気の浄化',type:'exhibition'}
+  },
+  '島都之河':{
+    en:{title:"A City's River: Water History and Water Culture of the Tamsui River and Taipei City",type:'exhibition'},
+    ja:{title:'島都の川：淡水河と台北の水の歴史と文化',type:'exhibition'}
+  }
 };
 
 const BOOK_KEY_ALIASES={
   '氣候變遷':'氣候變遷：亟待解決的人類共同問題',
   '有靈2':'有靈2：與神同行的阿美族民族植物',
+  '西納列克':'西納列克 Snaliq',
   '復原重生吧!里山.里地.里海':'復原重生吧！里山・里地・里海',
   '永續時尚,穿出你的風格與價值!':'永續時尚',
   '世界又熱.又平.又擠':'世界又熱、又平、又擠',
