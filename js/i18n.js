@@ -251,11 +251,11 @@ Object.assign(HOTSPOT_I18N.ja,{
   shore:'芝生と共有空間｜芝生や歩道は人の移動や休憩の場であると同時に、周囲の生息環境にもつながっています。保育共生地では、人の活動のあり方そのものが生態設計の一部になります。'
 });
 
-
 const BOOK_TITLE_DISPLAY={
   '脆弱的一瞬':{en:{title:"Our Fragile Moment: How Lessons from Earth's Past Can Help Us Survive the Climate Crisis",type:'official'},ja:{title:"Our Fragile Moment: How Lessons from Earth's Past Can Help Us Survive the Climate Crisis",type:'official'}},
   '地球之路':{en:{title:'The Earth Transformed: An Untold History',type:'official'},ja:{title:'The Earth Transformed: An Untold History',type:'official'}},
   '氣候賭局':{en:{title:'The Climate Casino: Risk, Uncertainty, and Economics for a Warming World',type:'official'},ja:{title:'The Climate Casino: Risk, Uncertainty, and Economics for a Warming World',type:'official'}},
+  '氣候變遷：亟待解決的人類共同問題':{en:{title:"Climate Change: Humanity's Urgent Common Challenge",type:'exhibition'},ja:{title:'気候変動：人類が直面する喫緊の共通課題',type:'exhibition'}},
   '暖化尚無定論':{en:{title:"Unsettled: What Climate Science Tells Us, What It Doesn't, and Why It Matters",type:'official'},ja:{title:"Unsettled: What Climate Science Tells Us, What It Doesn't, and Why It Matters",type:'official'}},
   '拯救地球':{en:{title:'How to Save Our Planet: The Facts',type:'official'},ja:{title:'How to Save Our Planet: The Facts',type:'official'}},
   '熱浪會先殺死你':{en:{title:'The Heat Will Kill You First: Life and Death on a Scorched Planet',type:'official'},ja:{title:'The Heat Will Kill You First: Life and Death on a Scorched Planet',type:'official'}},
@@ -263,6 +263,10 @@ const BOOK_TITLE_DISPLAY={
   '在冰川消失之前':{en:{title:'On Time and Water',type:'official'},ja:{title:'On Time and Water',type:'official'}},
   '尋找北極森林線':{en:{title:'The Treeline: The Last Forest and the Future of Life on Earth',type:'official'},ja:{title:'The Treeline: The Last Forest and the Future of Life on Earth',type:'official'}},
   '氣候緊急時代來了':{en:{title:'The Uninhabitable Earth: Life After Warming',type:'official'},ja:{title:'The Uninhabitable Earth: Life After Warming',type:'official'}},
+  '臺灣小米種回來！':{en:{title:'Bringing Taiwan Millet Back!',type:'exhibition'},ja:{title:'台湾アワを取り戻す！',type:'exhibition'}},
+  '有靈・原民植物智慧':{en:{title:'Spirited Plants: Indigenous Botanical Wisdom',type:'exhibition'},ja:{title:'霊性を宿す植物・先住民族の植物の知恵',type:'exhibition'}},
+  '有靈2：與神同行的阿美族民族植物':{en:{title:'Spirited Plants II: Amis Ethnobotany Walking with the Spirits',type:'exhibition'},ja:{title:'霊性を宿す植物2：神々と歩むアミ族の民族植物',type:'exhibition'}},
+  '西納列克 Snaliq':{en:{title:'Snaliq',type:'exhibition'},ja:{title:'スナリク（Snaliq）',type:'exhibition'}},
   '寂靜的春天':{en:{title:'Silent Spring',type:'official'},ja:{title:'Silent Spring',type:'official'}},
   '沙郡年紀':{en:{title:'A Sand County Almanac and Other Writings',type:'official'},ja:{title:'A Sand County Almanac and Other Writings',type:'official'}},
   '與路共生':{en:{title:'Crossings: How Road Ecology Is Shaping the Future of Our Planet',type:'official'},ja:{title:'Crossings: How Road Ecology Is Shaping the Future of Our Planet',type:'official'}},
@@ -288,10 +292,25 @@ const BOOK_TITLE_DISPLAY={
   '企業永續典範3.0':{en:{title:'Corporate Sustainability Models 3.0',type:'exhibition'},ja:{title:'企業サステナビリティ・モデル 3.0',type:'exhibition'}},
   '為什麼有些街道走起來特別涼？':{en:{title:'Why Do Some Streets Feel Cooler?',type:'exhibition'},ja:{title:'なぜ歩くと涼しく感じる通りがあるのか？',type:'exhibition'}},
   '終結空氣汙染':{en:{title:'Clearing the Air: The Beginning and the End of Air Pollution',type:'official'},ja:{title:'Clearing the Air: The Beginning and the End of Air Pollution',type:'official'}},
-  '島都之河':{en:{title:"A City's River: Water History and Water Culture of the Tamsui River and Taipei City",type:'exhibition'},ja:{title:'島都の川―淡水河と台北の水の歴史と文化',type:'exhibition'}}};
+  '島都之河':{en:{title:"A City's River: Water History and Water Culture of the Tamsui River and Taipei City",type:'exhibition'},ja:{title:'島都の川―淡水河と台北の水の歴史と文化',type:'exhibition'}}
+};
+
+const BOOK_KEY_ALIASES={
+  '氣候變遷':'氣候變遷：亟待解決的人類共同問題',
+  '有靈2':'有靈2：與神同行的阿美族民族植物',
+  '復原重生吧!里山.里地.里海':'復原重生吧！里山・里地・里海',
+  '永續時尚,穿出你的風格與價值!':'永續時尚',
+  '世界又熱.又平.又擠':'世界又熱、又平、又擠',
+  '企業永續典範3.0 ESG如何從觀念到實踐?':'企業永續典範3.0',
+  '為什麼有些街道走起來特別涼?':'為什麼有些街道走起來特別涼？'
+};
 
 function normalizeBookKey(title){
-  return String(title||'').replace(/[《》]/g,'').replace(/\s*[:：].*$/,'').trim();
+  const raw=String(title||'').replace(/[《》]/g,'').trim();
+  if(BOOK_TITLE_DISPLAY[raw])return raw;
+  if(BOOK_KEY_ALIASES[raw])return BOOK_KEY_ALIASES[raw];
+  const short=raw.replace(/\s*[:：].*$/,'').trim();
+  return BOOK_KEY_ALIASES[short]||short;
 }
 function getBookDisplayInfo(original,lang=CURRENT_LANG){
   const key=normalizeBookKey(original);
@@ -305,10 +324,10 @@ function bookTranslationLabel(type,lang=CURRENT_LANG){
   if(type!=='exhibition')return '';
   return lang==='ja'?'展示用訳':lang==='en'?'Exhibition translation':'';
 }
+window.normalizeBookKey=normalizeBookKey;
 window.getBookDisplayInfo=getBookDisplayInfo;
 window.getBookDisplayTitle=getBookDisplayTitle;
 window.bookTranslationLabel=bookTranslationLabel;
-
 
 function safeGetStorage(key){
   try{return window.localStorage.getItem(key);}catch(err){return null;}

@@ -4,7 +4,7 @@ const BOOK_WORKS=[
     "zone": "earth",
     "title": "脆弱的一瞬 : 從冰凍到超高溫時代, 重返45億年氣候史, 直指人類百年的存亡危機",
     "titles": {
-      "zh-Hant": "脆弱的一瞬 : 從冰凍到超高溫時代, 重返45億年氣候史, 直指人類百年的存亡危機"
+      "zh-Hant": "脆弱的一瞬"
     },
     "cover": "脆弱的一瞬.webp",
     "level": "A｜核心",
@@ -32,7 +32,7 @@ const BOOK_WORKS=[
     "zone": "earth",
     "title": "地球之路 : 人類、氣候與文明的未竟故事",
     "titles": {
-      "zh-Hant": "地球之路 : 人類、氣候與文明的未竟故事"
+      "zh-Hant": "地球之路"
     },
     "cover": "地球之路.webp",
     "level": "A｜主打",
@@ -60,7 +60,7 @@ const BOOK_WORKS=[
     "zone": "earth",
     "title": "氣候賭局 : 延緩氣候變遷 vs. 風險與不確定性, 經濟學能拿全球暖化怎麼辦?",
     "titles": {
-      "zh-Hant": "氣候賭局 : 延緩氣候變遷 vs. 風險與不確定性, 經濟學能拿全球暖化怎麼辦?"
+      "zh-Hant": "氣候賭局"
     },
     "cover": "氣候賭局.jpg",
     "level": "A｜主打",
@@ -128,7 +128,7 @@ const BOOK_WORKS=[
     "zone": "earth",
     "title": "暖化尚無定論 : 氣候科學告訴或沒告訴我們的事,為什麼這很重要?",
     "titles": {
-      "zh-Hant": "暖化尚無定論 : 氣候科學告訴或沒告訴我們的事,為什麼這很重要?"
+      "zh-Hant": "暖化尚無定論"
     },
     "cover": "暖化尚無定論.webp",
     "level": "B｜觀點對讀",
@@ -156,7 +156,7 @@ const BOOK_WORKS=[
     "zone": "earth",
     "title": "拯救地球 : 事實與真相",
     "titles": {
-      "zh-Hant": "拯救地球 : 事實與真相"
+      "zh-Hant": "拯救地球"
     },
     "cover": "拯救地球.webp",
     "level": "B｜入門",
@@ -212,7 +212,7 @@ const BOOK_WORKS=[
     "zone": "climate",
     "title": "野火 : 揭開氣候災難的序幕",
     "titles": {
-      "zh-Hant": "野火 : 揭開氣候災難的序幕"
+      "zh-Hant": "野火"
     },
     "cover": "野火.webp",
     "level": "A｜主打",
@@ -240,7 +240,7 @@ const BOOK_WORKS=[
     "zone": "climate",
     "title": "在冰川消失之前 : 關於遠古時間與未來之水的27則故事",
     "titles": {
-      "zh-Hant": "在冰川消失之前 : 關於遠古時間與未來之水的27則故事"
+      "zh-Hant": "在冰川消失之前"
     },
     "cover": "在冰川消失之前.webp",
     "level": "B｜延伸",
@@ -268,7 +268,7 @@ const BOOK_WORKS=[
     "zone": "climate",
     "title": "尋找北極森林線 : 融化的冰河、凍土與地球最後的森林",
     "titles": {
-      "zh-Hant": "尋找北極森林線 : 融化的冰河、凍土與地球最後的森林"
+      "zh-Hant": "尋找北極森林線"
     },
     "cover": "尋找北極森林線.webp",
     "level": "B｜延伸",
@@ -296,7 +296,7 @@ const BOOK_WORKS=[
     "zone": "climate",
     "title": "氣候緊急時代來了 : 從經濟海嘯到瘟疫爆發, 認清12大氣候風險與新生存模式",
     "titles": {
-      "zh-Hant": "氣候緊急時代來了 : 從經濟海嘯到瘟疫爆發, 認清12大氣候風險與新生存模式"
+      "zh-Hant": "氣候緊急時代來了"
     },
     "cover": "氣候緊急時代來了.jpg",
     "level": "B｜總覽",
@@ -436,7 +436,7 @@ const BOOK_WORKS=[
     "zone": "residents",
     "title": "沙郡年紀 : 像山一樣思考,荒野詩人寫給我們的自然之歌",
     "titles": {
-      "zh-Hant": "沙郡年紀 : 像山一樣思考,荒野詩人寫給我們的自然之歌"
+      "zh-Hant": "沙郡年紀"
     },
     "cover": "沙郡年紀.webp",
     "level": "A｜經典",
@@ -492,7 +492,7 @@ const BOOK_WORKS=[
     "zone": "residents",
     "title": "與路共生 : 道路生態學如何改變地球命運",
     "titles": {
-      "zh-Hant": "與路共生 : 道路生態學如何改變地球命運"
+      "zh-Hant": "與路共生"
     },
     "cover": "與路共生.webp",
     "level": "B｜延伸",
@@ -520,7 +520,7 @@ const BOOK_WORKS=[
     "zone": "residents",
     "title": "在大滅絕來臨前 : 人類能否逆轉自然浩劫?從水利、生態設計、環境科學、基因研究到地球工程, 普立茲獎得主對人類為解決地球問題帶來更多課題的觀察與思索",
     "titles": {
-      "zh-Hant": "在大滅絕來臨前 : 人類能否逆轉自然浩劫?從水利、生態設計、環境科學、基因研究到地球工程, 普立茲獎得主對人類為解決地球問題帶來更多課題的觀察與思索"
+      "zh-Hant": "在大滅絕來臨前"
     },
     "cover": "在大滅絕來臨前.webp",
     "level": "A｜主打",
@@ -548,7 +548,7 @@ const BOOK_WORKS=[
     "zone": "residents",
     "title": "復原重生吧!里山.里地.里海",
     "titles": {
-      "zh-Hant": "復原重生吧!里山.里地.里海"
+      "zh-Hant": "復原重生吧！里山・里地・里海"
     },
     "cover": "復原重生吧.webp",
     "level": "B｜延伸",
@@ -576,7 +576,7 @@ const BOOK_WORKS=[
     "zone": "residents",
     "title": "狂野人生：The North Face創辦人搶救巴塔哥尼亞荒原的瘋狂點子",
     "titles": {
-      "zh-Hant": "狂野人生：The North Face創辦人搶救巴塔哥尼亞荒原的瘋狂點子"
+      "zh-Hant": "狂野人生"
     },
     "cover": "狂野人生.webp",
     "level": "B｜人物",
@@ -632,7 +632,7 @@ const BOOK_WORKS=[
     "zone": "consume",
     "title": "甜甜圈經濟學 : 破除成長迷思的7個經濟新思考",
     "titles": {
-      "zh-Hant": "甜甜圈經濟學 : 破除成長迷思的7個經濟新思考"
+      "zh-Hant": "甜甜圈經濟學"
     },
     "cover": "甜甜圈經濟學.webp",
     "level": "A｜主打",
@@ -660,7 +660,7 @@ const BOOK_WORKS=[
     "zone": "consume",
     "title": "從搖籃到搖籃 : 綠色經濟的設計提案",
     "titles": {
-      "zh-Hant": "從搖籃到搖籃 : 綠色經濟的設計提案"
+      "zh-Hant": "從搖籃到搖籃"
     },
     "cover": "從搖籃到搖籃.webp",
     "level": "A｜主打",
@@ -716,7 +716,7 @@ const BOOK_WORKS=[
     "zone": "consume",
     "title": "垃圾之書 : 面對人類將被廢棄物所廢棄的事實與行動",
     "titles": {
-      "zh-Hant": "垃圾之書 : 面對人類將被廢棄物所廢棄的事實與行動"
+      "zh-Hant": "垃圾之書"
     },
     "cover": "垃圾之書.webp",
     "level": "A｜主打",
@@ -744,7 +744,7 @@ const BOOK_WORKS=[
     "zone": "consume",
     "title": "永續時尚,穿出你的風格與價值! : 圖解68則關鍵知識和實踐技巧,讓你的衣服穿的更巧、買的更少",
     "titles": {
-      "zh-Hant": "永續時尚,穿出你的風格與價值! : 圖解68則關鍵知識和實踐技巧,讓你的衣服穿的更巧、買的更少"
+      "zh-Hant": "永續時尚"
     },
     "cover": "永續時尚.jpg",
     "level": "B｜生活",
@@ -772,7 +772,7 @@ const BOOK_WORKS=[
     "zone": "consume",
     "title": "別讓地球碳氣 : 從一根香蕉學會減碳生活",
     "titles": {
-      "zh-Hant": "別讓地球碳氣 : 從一根香蕉學會減碳生活"
+      "zh-Hant": "別讓地球碳氣"
     },
     "cover": "別讓地球碳氣.jpg",
     "level": "B｜生活",
@@ -800,7 +800,7 @@ const BOOK_WORKS=[
     "zone": "consume",
     "title": "能源大騙局 : 綠能神話引燃的世紀豪賭",
     "titles": {
-      "zh-Hant": "能源大騙局 : 綠能神話引燃的世紀豪賭"
+      "zh-Hant": "能源大騙局"
     },
     "cover": "能源大騙局.webp",
     "level": "B｜觀點對讀",
@@ -828,7 +828,7 @@ const BOOK_WORKS=[
     "zone": "consume",
     "title": "巫師與先知 : 兩種環保科學觀如何拯救我們免於生態浩劫?",
     "titles": {
-      "zh-Hant": "巫師與先知 : 兩種環保科學觀如何拯救我們免於生態浩劫?"
+      "zh-Hant": "巫師與先知"
     },
     "cover": "巫師與先知.jpg",
     "level": "A｜對讀",
@@ -856,7 +856,7 @@ const BOOK_WORKS=[
     "zone": "consume",
     "title": "世界又熱.又平.又擠",
     "titles": {
-      "zh-Hant": "世界又熱.又平.又擠"
+      "zh-Hant": "世界又熱、又平、又擠"
     },
     "cover": "世界又熱、又平、又擠.webp",
     "level": "B｜延伸",
@@ -884,7 +884,7 @@ const BOOK_WORKS=[
     "zone": "future",
     "title": "我們可以選擇的未來 : 拯救氣候危機",
     "titles": {
-      "zh-Hant": "我們可以選擇的未來 : 拯救氣候危機"
+      "zh-Hant": "我們可以選擇的未來"
     },
     "cover": "我們可以選擇的未來.webp",
     "level": "A｜核心",
@@ -912,7 +912,7 @@ const BOOK_WORKS=[
     "zone": "future",
     "title": "如何避免氣候災難 : 結合科技與商業的奇蹟, 全面啟動淨零碳新經濟",
     "titles": {
-      "zh-Hant": "如何避免氣候災難 : 結合科技與商業的奇蹟, 全面啟動淨零碳新經濟"
+      "zh-Hant": "如何避免氣候災難"
     },
     "cover": "如何避免氣候災難.webp",
     "level": "A｜主打",
@@ -922,7 +922,7 @@ const BOOK_WORKS=[
     "notes": "同一作品不同語言版本合併展示",
     "editions": [
       {
-        "language": "en",
+        "language": "zh-Hant",
         "title": "如何避免氣候災難 : 結合科技與商業的奇蹟, 全面啟動淨零碳新經濟",
         "barcode": "d2086662",
         "year": 2021,
@@ -952,7 +952,7 @@ const BOOK_WORKS=[
     "zone": "future",
     "title": "水的價值 : 為世上最艱鉅的水資源挑戰尋覓解方",
     "titles": {
-      "zh-Hant": "水的價值 : 為世上最艱鉅的水資源挑戰尋覓解方"
+      "zh-Hant": "水的價值"
     },
     "cover": "水的價值.webp",
     "level": "A｜主打",
@@ -980,7 +980,7 @@ const BOOK_WORKS=[
     "zone": "future",
     "title": "永續發展的路口 : 實踐SDGs的權威指南",
     "titles": {
-      "zh-Hant": "永續發展的路口 : 實踐SDGs的權威指南"
+      "zh-Hant": "永續發展的路口"
     },
     "cover": "永續發展的路口.webp",
     "level": "B｜指南",
@@ -1008,7 +1008,7 @@ const BOOK_WORKS=[
     "zone": "future",
     "title": "永續發展的終局之戰：氣候變遷議題的理論與實務",
     "titles": {
-      "zh-Hant": "永續發展的終局之戰：氣候變遷議題的理論與實務"
+      "zh-Hant": "永續發展的終局之戰"
     },
     "cover": "永續發展的終局之戰.webp",
     "level": "B｜延伸",
@@ -1036,7 +1036,7 @@ const BOOK_WORKS=[
     "zone": "future",
     "title": "減碳社會學：台灣淨零轉型的民意與挑戰",
     "titles": {
-      "zh-Hant": "減碳社會學：台灣淨零轉型的民意與挑戰"
+      "zh-Hant": "減碳社會學"
     },
     "cover": "減碳社會學.webp",
     "level": "A｜特色",
@@ -1064,7 +1064,7 @@ const BOOK_WORKS=[
     "zone": "future",
     "title": "企業永續典範3.0 ESG如何從觀念到實踐? : ESG觀察家 X ESG先行者 交織而成的永續實踐進行曲",
     "titles": {
-      "zh-Hant": "企業永續典範3.0 ESG如何從觀念到實踐? : ESG觀察家 X ESG先行者 交織而成的永續實踐進行曲"
+      "zh-Hant": "企業永續典範3.0"
     },
     "cover": "企業永續典範3.0 ESG如何從觀念到實踐.webp",
     "level": "B｜延伸",
@@ -1092,7 +1092,7 @@ const BOOK_WORKS=[
     "zone": "future",
     "title": "為什麼有些街道走起來特別涼? : 國際熱舒適專家帶你踏查台灣, 尋找城市降溫的可能",
     "titles": {
-      "zh-Hant": "為什麼有些街道走起來特別涼? : 國際熱舒適專家帶你踏查台灣, 尋找城市降溫的可能"
+      "zh-Hant": "為什麼有些街道走起來特別涼？"
     },
     "cover": "為什麼有些街道走起來特別涼.webp",
     "level": "A｜特色",
@@ -1120,7 +1120,7 @@ const BOOK_WORKS=[
     "zone": "future",
     "title": "終結空氣汙染：從全球反擊空氣汙染的故事，了解如何淨化國家、社區，以及你吸入的每一口空氣",
     "titles": {
-      "zh-Hant": "終結空氣汙染：從全球反擊空氣汙染的故事，了解如何淨化國家、社區，以及你吸入的每一口空氣"
+      "zh-Hant": "終結空氣汙染"
     },
     "cover": "終結空氣汙染.webp",
     "level": "B｜延伸",
@@ -1148,7 +1148,7 @@ const BOOK_WORKS=[
     "zone": "future",
     "title": "島都之河：匯流與共生，淡水河與臺北的百年互動",
     "titles": {
-      "zh-Hant": "島都之河：匯流與共生，淡水河與臺北的百年互動"
+      "zh-Hant": "島都之河"
     },
     "cover": "島都之河.webp",
     "level": "A｜在地",
