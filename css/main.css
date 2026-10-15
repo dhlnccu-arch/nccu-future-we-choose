@@ -1511,3 +1511,34 @@ body[data-lang="en"] .photo-copy h2.exhibit-statement{
   .hero-action { font-size: 15px; padding: 12px 20px; min-height: 48px; }
   .scroll-cue { font-size: 13px; }
 }
+
+/* v1.7.5 — Mobile typography and Chinese word-break optimization */
+@media (max-width: 900px) {
+  .hero-subtitle {
+    font-size: 19px !important;
+    line-height: 1.58 !important;
+  }
+  .hero-intro {
+    font-size: 15px !important;
+    line-height: 1.72 !important;
+  }
+  .hero-visit {
+    font-size: 12px !important;
+    gap: 6px 16px !important;
+  }
+  .hero-action {
+    font-size: 13px !important;
+    padding: 10px 14px !important;
+  }
+  
+  /* 防止中文在手機版被隨意從字中間斷開 */
+  .opening-line,
+  .chapter h2,
+  .chapter-question p,
+  .hero h1,
+  .hero-subtitle,
+  .hero-intro {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+}
